@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의하기 - HEM 건강한교육사역</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <div class="header-container">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="image/logo_hem.png" alt="HEM-건강한교육사역" class="logo-img">
+                    HEM-건강한교육사역
+                </a>
+            </h1>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="about.html">회사소개</a></li>
+                    <li><a href="ministry.html">사역소개</a></li>
+                    <li><a href="board.html">게시판</a></li>
+                    <li><a href="contact.html" class="active">문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 문의 비주얼 -->
+    <section class="contact-visual">
+        <div class="container">
+            <h2 class="contact-title">문의하기</h2>
+            <p class="contact-subtitle">HEM과 함께 건강한 교육 사역을 만들어가요</p>
+        </div>
+    </section>
+
+    <!-- 문의 폼 -->
+    <section class="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">이름 *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일 *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="category">문의 유형 *</label>
+                        <select id="category" name="category" required>
+                            <option value="">선택해주세요</option>
+                            <option value="education">교육 프로그램</option>
+                            <option value="partnership">협력 문의</option>
+                            <option value="volunteer">봉사 신청</option>
+                            <option value="other">기타</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">문의 내용 *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">문의하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의 정보 -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    <h3>주소</h3>
+                    <p>서울특별시 강남구 테헤란로 123<br>HEM빌딩 4층</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <h3>이메일</h3>
+                    <p>info@hem.org<br>support@hem.org</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                    </div>
+                    <h3>전화</h3>
+                    <p>02-123-4567<br>010-9876-5432</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 지도 영역 -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <h3>찾아오시는 길</h3>
+                <iframe class="map-frame"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3589690330133!2d127.02881231531138!3d37.49897797981129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15857ce38dd%3A0xac87bf98397e0ca4!2z7YWM7Iqk7Yq47Juo7Ja07J247J6l!5e0!3m2!1sko!2skr!4v1645508657459!5m2!1sko!2skr"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 영역 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>HEM</h4>
+                    <ul>
+                        <li><a href="about.html#vision">HEM 비전</a></li>
+                        <li><a href="about.html#values">핵심가치</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>사역안내</h4>
+                    <ul>
+                        <li><a href="ministry.html#education">교회학교 세움</a></li>
+                        <li><a href="ministry.html#vision-tree">비전트리</a></li>
+                        <li><a href="ministry.html#network">네트워크</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>지원</h4>
+                    <ul>
+                        <li><a href="contact.html">문의</a></li>
+                        <li><a href="board.html">커뮤니티</a></li>
+                        <li><a href="#" class="donation-link">후원하기</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Healthy Education Ministry</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/healthy_edu_ministry?igsh=d2I3bXFhdDcwOTA1" class="social-link instagram" target="_blank">Instagram</a>
+                    <a href="https://www.youtube.com/@healthyeduMinistry" class="social-link youtube" target="_blank">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 후원 팝업 -->
+    <div class="donation-popup">
+        <div class="donation-content">
+            <button class="popup-close" aria-label="닫기"></button>
+            <div class="donation-header">
+                <h3>HEM 후원하기</h3>
+                <p>건강한 교육 사역을 함께 만들어갑니다</p>
+            </div>
+            <div class="donation-info">
+                <h4>후원 안내</h4>
+                <p>HEM은 여러분의 후원으로 건강한 교육 사역을 이어가고 있습니다. 정기 후원과 일시 후원을 통해 함께 동참해 주세요.</p>
+                <div class="donation-account">
+                    <p>입금 계좌</p>
+                    <p class="account-number">3333-08-1715148</p>
+                    <p>예금주: 백요한 (카카오뱅크)</p>
+                </div>
+            </div>
+            <div class="donation-buttons">
+                <a href="https://missionfund.org/go/?pi=healthyedu" class="regular-donation" target="_blank">정기 후원하기</a>
+                <a href="https://missionfund.org/go/?pi=eduforviet" class="one-time-donation" target="_blank">일시 후원하기</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
