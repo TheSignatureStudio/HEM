@@ -115,10 +115,9 @@ p.setVar("webUrl", m.getWebUrl());
 
     
 
-response.sendRedirect("/main/index.jsp");
+response.sendRedirect("./main/index.jsp");
 
 
-    out.write('\n');
   }
 
   private com.caucho.make.DependencyContainer _caucho_depends
@@ -178,7 +177,7 @@ response.sendRedirect("/main/index.jsp");
     String resourcePath = loader.getResourcePathSpecificFirst();
     mergePath.addClassPath(resourcePath);
     com.caucho.vfs.Depend depend;
-    depend = new com.caucho.vfs.Depend(appDir.lookup("index.jsp"), 4485597632187091833L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("index.jsp"), -2349700604351528254L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
     depend = new com.caucho.vfs.Depend(appDir.lookup("init.jsp"), -1964349352132992510L, false);

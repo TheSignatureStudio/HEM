@@ -993,3 +993,125 @@ footer::before {
     color: var(--primary-color);
 }
 
+/* 관리자 페이지 스타일 */
+.HEM-admin {
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .HEM-admin .div-wrapper {
+    background-color: #f4f7f9;
+    width: 1440px;
+    height: 900px;
+  }
+  
+  .HEM-admin .div {
+    position: relative;
+    width: 360px;
+    height: 400px;
+    top: 250px;
+    left: 540px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .HEM-admin .text {
+    position: absolute;
+    top: 39px;
+    left: 130px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #337f4c;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-wrapper {
+    top: 109px;
+    left: 40px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .div-2 {
+    top: 135px;
+    position: absolute;
+    width: 280px;
+    height: 40px;
+    left: 40px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #e6e6e6;
+  }
+  
+  .HEM-admin .text-2 {
+    top: 194px;
+    left: 40px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .div-3 {
+    top: 220px;
+    position: absolute;
+    width: 280px;
+    height: 40px;
+    left: 40px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #e6e6e6;
+  }
+  
+  .HEM-admin .overlap-group {
+    position: absolute;
+    width: 280px;
+    height: 50px;
+    top: 290px;
+    left: 40px;
+    background-color: #337f4c;
+    border-radius: 4px;
+  }
+  
+  .HEM-admin .text-3 {
+    top: 14px;
+    left: 110px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-4 {
+    top: 359px;
+    left: 148px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #337f4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  

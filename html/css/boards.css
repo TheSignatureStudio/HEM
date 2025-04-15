@@ -1,0 +1,455 @@
+.HEM-admin {
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .HEM-admin .div {
+    background-color: #f4f7f9;
+    width: 1440px;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .HEM-admin .view {
+    position: absolute;
+    width: 240px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+  }
+  
+  .HEM-admin .text-wrapper {
+    position: absolute;
+    width: 240px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color: #337f4c;
+  }
+  
+  .HEM-admin .text {
+    top: 21px;
+    left: 80px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .div-wrapper {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 100px;
+    left: 0;
+    background-color: #ffffff;
+  }
+  
+  .HEM-admin .text-2 {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #4c4c4c;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .HEM-admin .text-wrapper-2 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 150px;
+    left: 0;
+    background-color: #f2f9f4;
+  }
+  
+  .HEM-admin .text-3 {
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #337f4c;
+    font-size: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-wrapper-3 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 200px;
+    left: 0;
+    background-color: #ffffff;
+  }
+  
+  .HEM-admin .text-wrapper-4 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 250px;
+    left: 0;
+    background-color: #ffffff;
+  }
+  
+  .HEM-admin .view-2 {
+    position: absolute;
+    width: 1200px;
+    height: 70px;
+    top: 0;
+    left: 240px;
+    background-color: #ffffff;
+  }
+  
+  .HEM-admin .text-4 {
+    top: 24px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #333333;
+    font-size: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-5 {
+    top: 23px;
+    left: 1060px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .div-2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 25px;
+    left: 1130px;
+    background-color: #e6e6e6;
+    border-radius: 12px;
+  }
+  
+  .HEM-admin .div-wrapper-2 {
+    position: absolute;
+    width: 1200px;
+    height: calc(100vh - 100px);
+    top: 70px;
+    left: 240px;
+    background-color: #f4f7f9;
+  }
+  
+  .HEM-admin .div-3 {
+    position: relative;
+    width: 1152px;
+    height: calc(100vh - 100px);
+    top: 24px;
+    left: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .HEM-admin .text-6 {
+    top: 23px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #333333;
+    font-size: 18px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .overlap {
+    position: absolute;
+    width: 128px;
+    height: 40px;
+    top: 24px;
+    left: 1000px;
+    background-color: #337f4c;
+    border-radius: 4px;
+  }
+  
+  .HEM-admin .text-7 {
+    top: 9px;
+    left: 26px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .navbar {
+    position: absolute;
+    width: 1104px;
+    height: 50px;
+    top: 80px;
+    left: 24px;
+    background-color: #f4f7f9;
+  }
+  
+  .HEM-admin .text-8 {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-9 {
+    top: 15px;
+    left: 120px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-10 {
+    top: 15px;
+    left: 320px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-11 {
+    top: 15px;
+    left: 440px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-12 {
+    top: 15px;
+    left: 580px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-13 {
+    top: 15px;
+    left: 800px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-14 {
+    top: 15px;
+    left: 920px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .navbar-2 {
+    position: absolute;
+    width: 1104px;
+    height: 60px;
+    top: 130px;
+    left: 24px;
+    background-color: #ffffff;
+  }
+  
+  .HEM-admin .text-15 {
+    top: 19px;
+    left: 24px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-16 {
+    top: 19px;
+    left: 120px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-17 {
+    top: 19px;
+    left: 320px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-18 {
+    top: 19px;
+    left: 440px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .text-19 {
+    top: 19px;
+    left: 580px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .overlap-group {
+    position: absolute;
+    width: 64px;
+    height: 32px;
+    top: 14px;
+    left: 800px;
+    background-color: #e5f9ef;
+    border-radius: 16px;
+  }
+  
+  .HEM-admin .text-20 {
+    top: 5px;
+    left: 12px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #19994c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .overlap-2 {
+    position: absolute;
+    width: 48px;
+    height: 32px;
+    top: 14px;
+    left: 920px;
+    background-color: #eff2f9;
+    border-radius: 4px;
+  }
+  
+  .HEM-admin .text-21 {
+    top: 5px;
+    left: 10px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #3366cc;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .overlap-3 {
+    position: absolute;
+    width: 48px;
+    height: 32px;
+    top: 14px;
+    left: 976px;
+    background-color: #f9efef;
+    border-radius: 4px;
+  }
+  
+  .HEM-admin .text-22 {
+    top: 5px;
+    left: 10px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #cc3333;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .HEM-admin .overlap-4 {
+    position: absolute;
+    width: 48px;
+    height: 32px;
+    top: 14px;
+    left: 1032px;
+    background-color: #337f4c;
+    border-radius: 4px;
+  }
+  
+  .HEM-admin .text-23 {
+    top: 5px;
+    left: 10px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
