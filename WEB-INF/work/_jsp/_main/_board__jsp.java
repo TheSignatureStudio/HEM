@@ -10,6 +10,7 @@ import java.util.*;
 import java.io.*;
 import malgnsoft.db.*;
 import malgnsoft.util.*;
+import dao.*;
 
 public class _board__jsp extends com.caucho.jsp.JavaPage
 {
@@ -115,12 +116,47 @@ p.setVar("webUrl", m.getWebUrl());
 
     
 
+String ch = "main";
+
 
     
 
-p.setBody("main.board");
-p.display();
+BoardDao board = new BoardDao();
 
+//\uae30\ubcf8 \ubcc0\uc218
+String code = m.rs("code", "notice");  //\uac8c\uc2dc\ud310 \ucf54\ub4dc
+int pageNum = m.ri("page", 1);
+int categoryId = m.ri("cid");
+String keyword = m.rs("keyword"); //\uac80\uc0c9\uc5b4
+
+//\ubaa9\ub85d
+ListManager lm = new ListManager();
+lm.setRequest(request);
+lm.setTable(board.table + " a");
+lm.setFields("a.*");
+lm.addWhere("a.status != -1");
+if(categoryId > 0) lm.addWhere("a.category_id = " + categoryId);
+if(!"".equals(keyword)) { //\uac80\uc0c9 \uc870\uac74 \ucd94\uac00
+    lm.addSearch("a.subject,a.content", keyword, "LIKE");
+}
+lm.setOrderBy("a.sort ASC, a.id DESC");
+
+//\ud3ec\ub9f7\ud305
+DataSet list = lm.getDataSet();
+while(list.next()) {
+    list.put("reg_date_conv", m.time("yyyy.MM.dd", list.s("reg_date")));
+    list.put("content_conv", m.stripTags(list.s("content")));
+    list.put("subject_conv", m.cutString(list.s("subject"), 50));
+}
+
+//\ucd9c\ub825
+p.setLayout(ch);
+p.setBody("main.board");
+p.setVar("list", list);
+p.setVar("total_cnt", lm.getTotalNum());
+p.setVar("pagebar", lm.getPaging());
+p.setVar("category_id", categoryId);
+p.display();
 
   }
 
@@ -181,13 +217,13 @@ p.display();
     String resourcePath = loader.getResourcePathSpecificFirst();
     mergePath.addClassPath(resourcePath);
     com.caucho.vfs.Depend depend;
-    depend = new com.caucho.vfs.Depend(appDir.lookup("main/board.jsp"), -2229470574637852861L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("main/board.jsp"), 2546374903367450027L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
-    depend = new com.caucho.vfs.Depend(appDir.lookup("main/init.jsp"), 7724095823239291073L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("main/init.jsp"), -5623034899004674451L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
-    depend = new com.caucho.vfs.Depend(appDir.lookup("init.jsp"), -1964349352132992510L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("init.jsp"), 430197280427177313L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
   }

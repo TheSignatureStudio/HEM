@@ -1,4 +1,4 @@
-<%@ page import="java.util.*,java.io.*,malgnsoft.db.*,malgnsoft.util.*" %><%
+<%@ page import="java.util.*,java.io.*,malgnsoft.db.*,malgnsoft.util.*,dao.*" %><%
 
 String docRoot = Config.getDocRoot();
 String jndi = Config.getJndi();

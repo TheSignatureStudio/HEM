@@ -917,248 +917,6 @@ footer::before {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* --- Remove / Comment out old Popup Styles --- */
-
-/* 팝업 스타일 - Replaced by .modal-* */
-/*
-.popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    background: #fff;
-    width: 90%;
-    max-width: 800px;
-    max-height: 90vh;
-    border-radius: 8px;
-    padding: 2rem;
-    position: relative;
-    overflow-y: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.popup-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 30px;
-    height: 30px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.popup-close::before,
-.popup-close::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 2px;
-    background-color: #333;
-}
-
-.popup-close::before {
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.popup-close::after {
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.popup-header {
-    margin-bottom: 1.5rem;
-}
-
-.popup-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.popup-meta {
-    display: flex;
-    gap: 1rem;
-    color: #666;
-    font-size: 0.9rem;
-}
-
-.popup-body {
-    line-height: 1.6;
-    color: #444;
-}
-
-.popup-body h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 1.5rem 0 0.8rem;
-    color: #333;
-}
-
-.popup-body ul {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.popup-body li {
-    margin-bottom: 0.5rem;
-}
-
-@media (max-width: 768px) {
-    .popup-content {
-        width: 95%;
-        padding: 1.5rem;
-    }
-
-    .popup-title {
-        font-size: 1.5rem;
-    }
-
-    .popup-meta {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-}
-*/
-
-/* 후원 팝업 스타일 - Replaced by .modal-* */
-/*
-.donation-popup {
-    display: none; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-}
-
-.donation-content {
-    background: var(--background-white);
-    width: 90%;
-    max-width: 600px; 
-    border-radius: 12px;
-    padding: 2rem;
-    position: relative;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
-.donation-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.donation-header h3 {
-    font-size: 1.8rem;
-    color: var(--text-color);
-    margin-bottom: 0.5rem;
-}
-
-.donation-header p {
-    color: var(--text-color);
-    font-size: 1.1rem;
-}
-
-.donation-info {
-    background: var(--background-light);
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-}
-
-.donation-info h4 {
-    font-size: 1.2rem;
-    color: var(--text-color);
-    margin-bottom: 1rem;
-}
-
-.donation-info p {
-    color: var(--text-color);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.donation-account {
-    background: var(--light-gray);
-    padding: 1rem;
-    border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.donation-account p {
-    margin-bottom: 0.5rem;
-}
-
-.donation-account .account-number {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--text-color);
-}
-
-.donation-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.donation-buttons a { 
-    padding: 0.8rem 1.5rem;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: var(--transition);
-}
-
-.donation-buttons .regular-donation {
-    background: var(--primary-color);
-    color: var(--white);
-}
-
-.donation-buttons .regular-donation:hover {
-    background: var(--secondary-color);
-}
-
-.donation-buttons .one-time-donation {
-    background: var(--background-light);
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-}
-
-.donation-buttons .one-time-donation:hover {
-    background: var(--primary-color);
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    .donation-content {
-        padding: 1.5rem;
-    }
-
-    .donation-header h3 {
-        font-size: 1.5rem;
-    }
-
-    .donation-buttons {
-        flex-direction: column;
-    }
-}
-*/
-
 /* --- Board Page Styles --- */
 
 /* 게시판 검색 영역 */
@@ -1299,14 +1057,6 @@ footer::before {
     background: #588157;
 }
 
-/* 게시글 팝업 (기존 .popup-overlay/.popup-content 와 병합/정리 필요) */
-/* .popup-overlay {...} -> Uses .modal-overlay */
-/* .popup-content {...} -> Uses .modal-content .modal-md */
-/* .popup-header {...} -> Uses .modal-header */
-/* .popup-title {...} -> Uses .modal-title */
-/* .popup-meta {...} -> Uses .modal-meta */
-/* .popup-body {...} -> Uses .modal-body */
-/* .popup-close {...} -> Uses .modal-close */
 
 /* 반응형 스타일 - Board */
 @media (max-width: 768px) {
@@ -1327,9 +1077,7 @@ footer::before {
     .search-form button {
         width: 100%;
     }
-    /* 게시글 팝업 반응형 (공통 .modal-content 반응형과 병합/정리 필요) */
-    /* .popup-content {...} -> Covered by .modal-content responsive below? */
-    /* .popup-title {...} -> Covered by .modal-title responsive below? */
+
 }
 
 /* --- Common Modal Responsive --- */
@@ -1771,7 +1519,6 @@ footer::before {
 }
 
 @media (max-width: 480px) {
-    /* 반응형 스타일 중복: .about-visual, .about-title 은 .page-visual 공통 반응형으로 처리됨 */
     .page-visual {
         /* height: 300px; */ /* 주석 처리 또는 삭제 */
     }
@@ -2059,18 +1806,14 @@ footer::before {
         padding: 0 20px;
     }
 
-    /* 1024px 이하일 때 project-grid 2열 (위에서 1열로 변경했으므로 여기선 제거) */
-    /* .project-grid { grid-template-columns: repeat(2, 1fr); } */
 }
 
 @media (max-width: 768px) {
-    /* 반응형 스타일 중복: ministry-page-title/subtitle은 .page-title/subtitle 공통 반응형으로 처리 */
     .page-title {
         font-size: 36px; /* ministry.css 에서 가져옴 (약 2.25rem) - 기존 3rem과 충돌, 3rem 유지 또는 조정 필요 */
     }
     .page-subtitle {
         font-size: 18px; /* ministry.css 에서 가져옴 (약 1.125rem) - 기존 1.2rem과 유사, 1.2rem 유지 또는 조정 필요 */
-        /* margin-bottom: 40px; */ /* ministry.css 에서 가져옴 - 공통 subtitle 마진과 다름, 필요시 추가 */
     }
 
     .ministry-overview {
@@ -2092,8 +1835,6 @@ footer::before {
         align-items: center;
     }
 
-    /* 768px 이하일 때 project-grid 1열 (위에서 이미 1열로 변경됨) */
-    /* .project-grid { grid-template-columns: 1fr; } */
     .main-image {
         grid-column: auto;
         grid-row: auto;
@@ -2126,7 +1867,6 @@ footer::before {
 }
 
 @media (max-width: 480px) {
-    /* 반응형 스타일 중복: ministry-page-title/subtitle */
     .page-title {
         font-size: 28px; /* ministry.css 에서 가져옴 (약 1.75rem) - 기존 2.5rem과 충돌, 2.5rem 유지 또는 조정 필요 */
     }
@@ -2307,12 +2047,6 @@ footer::before {
 /* '입금 계좌' 텍스트 앞 아이콘 */
 .donation-account p:first-child::before {
     content: '\F0153'; /* Material Design Icon 'bank' or similar - Font setup needed */
-    /* Or use an SVG background image: */
-    /* content: ''; */
-    /* background-image: url('path/to/bank-icon.svg'); */
-    /* background-size: 16px 16px; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
     font-family: 'Material Icons'; /* Example, requires font setup */
     position: absolute;
     left: 0;

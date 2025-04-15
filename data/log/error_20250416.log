@@ -1,0 +1,242 @@
+[2025-04-16 07:49:28] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:28] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:49:28] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:28] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:49:28] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:28] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:49:28] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:28] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:49:28] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/layout_main.html
+[2025-04-16 07:49:34] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:34] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:49:34] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:34] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:49:34] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:34] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:49:34] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:34] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:49:34] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/layout_main.html
+[2025-04-16 07:49:47] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:47] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:49:47] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:47] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:49:47] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:47] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:49:47] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:49:47] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:50:49] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:50:49] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:50:49] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:50:49] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:50:49] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:50:49] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 07:50:49] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 07:50:49] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:02:02] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/top.html
+[2025-04-16 08:02:02] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/footer.html
+[2025-04-16 08:02:03] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/top.html
+[2025-04-16 08:02:03] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/footer.html
+[2025-04-16 08:04:00] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/layout_header.html
+[2025-04-16 08:04:01] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/layout_header.html
+[2025-04-16 08:04:05] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/layout_header.html
+[2025-04-16 08:04:20] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout_header.html
+[2025-04-16 08:04:20] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout_header.html
+[2025-04-16 08:04:25] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout_header.html
+[2025-04-16 08:04:25] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout_footer.html
+[2025-04-16 08:04:32] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/top.html
+[2025-04-16 08:04:32] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/footer.html
+[2025-04-16 08:04:48] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/design-top.html
+[2025-04-16 08:04:48] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/footer.html
+[2025-04-16 08:04:49] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/design-top.html
+[2025-04-16 08:04:49] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/footer.html
+[2025-04-16 08:04:50] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/design-top.html
+[2025-04-16 08:04:50] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/footer.html
+[2025-04-16 08:04:51] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/design-top.html
+[2025-04-16 08:04:51] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/footer.html
+[2025-04-16 08:04:57] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/footer.html
+[2025-04-16 08:05:46] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/design_top.html
+[2025-04-16 08:05:47] {Template.readFile} path:/Users/tim/Documents/resin-4.0.67/webapps/ROOT/html/layout/design_top.html
+[2025-04-16 08:06:58] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:06:58] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:06:58] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:06:58] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:06:58] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:06:58] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:06:58] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:06:58] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:04] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:04] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:04] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:04] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:04] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:04] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:04] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:04] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:27] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:27] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:27] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:27] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:27] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:27] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:27] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:27] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:51] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:51] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:51] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:51] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:51] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:51] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:51] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:51] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:58] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:58] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:58] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:58] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:58] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:58] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-16 08:08:58] at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /main/board.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-16 08:08:58] at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)

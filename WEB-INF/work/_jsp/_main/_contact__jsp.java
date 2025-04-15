@@ -10,6 +10,7 @@ import java.util.*;
 import java.io.*;
 import malgnsoft.db.*;
 import malgnsoft.util.*;
+import dao.*;
 
 public class _contact__jsp extends com.caucho.jsp.JavaPage
 {
@@ -115,9 +116,12 @@ p.setVar("webUrl", m.getWebUrl());
 
     
 
+String ch = "main";
+
 
     
 
+p.setLayout(ch);
 p.setBody("main.contact");
 p.display();
 
@@ -181,13 +185,13 @@ p.display();
     String resourcePath = loader.getResourcePathSpecificFirst();
     mergePath.addClassPath(resourcePath);
     com.caucho.vfs.Depend depend;
-    depend = new com.caucho.vfs.Depend(appDir.lookup("main/contact.jsp"), 35206276446764393L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("main/contact.jsp"), 3560537129299526202L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
-    depend = new com.caucho.vfs.Depend(appDir.lookup("main/init.jsp"), 7724095823239291073L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("main/init.jsp"), -5623034899004674451L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
-    depend = new com.caucho.vfs.Depend(appDir.lookup("init.jsp"), -1964349352132992510L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("init.jsp"), 430197280427177313L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
   }
