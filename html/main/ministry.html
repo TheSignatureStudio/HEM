@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>사역소개 - HEM 건강한교육사역</title>
-    <link rel="stylesheet" href="../html/css/reset.css">
     <link rel="stylesheet" href="../html/css/style.css">
-    <link rel="stylesheet" href="../html/css/ministry.css">
-    <link rel="stylesheet" href="../html/css/about.css">
 </head>
 <body>
     <!-- 헤더 영역 -->
@@ -37,11 +34,11 @@
     </header>
 
     <!-- 메인 비주얼 섹션 -->
-    <section class="ministry-visual">
+    <section class="page-visual">
         <div class="container">
-            <h1 class="ministry-page-title">사역소개</h1>
-            <p class="ministry-page-subtitle">
-                HEM은 교회학교를 세우고, 비전트리 프로그램을 통해 다음 세대를 양육하며,<br>
+            <h1 class="page-title">사역소개</h1>
+            <p class="page-subtitle">
+                HEM은 교회학교를 세우고, 비전트리 프로그램을 통해 다음 세대를 양육하며, 
                 교회와 교회학교 간의 네트워크를 구축하여 하나님 나라의 확장을 위해 힘쓰고 있습니다.
             </p>
             <div class="ministry-overview">
@@ -237,14 +234,14 @@
     </footer>
 
     <!-- 후원 팝업 -->
-    <div class="donation-popup">
-        <div class="donation-content">
-            <button class="popup-close" aria-label="닫기"></button>
-            <div class="donation-header">
-                <h3>HEM 후원하기</h3>
-                <p>건강한 교육 사역을 함께 만들어갑니다</p>
+    <div class="modal-overlay" id="donationModalOverlay">
+        <div class="modal-content modal-sm">
+            <button class="modal-close" aria-label="닫기"></button>
+            <div class="modal-header" style="text-align: center;">
+                <h3 class="modal-title">HEM 후원하기</h3>
+                <p class="modal-subtitle">건강한 교육 사역을 함께 만들어갑니다</p>
             </div>
-            <div class="donation-info">
+            <div class="modal-body">
                 <h4>후원 안내</h4>
                 <p>HEM은 여러분의 후원으로 건강한 교육 사역을 이어가고 있습니다. 정기 후원과 일시 후원을 통해 함께 동참해 주세요.</p>
                 <div class="donation-account">
@@ -261,6 +258,5 @@
     </div>
 
     <script src="../html/js/script.js"></script>
-    <script src="../html/js/ministry.js"></script>
 </body>
 </html>

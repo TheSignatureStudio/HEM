@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>게시판 - HEM 건강한교육사역</title>
-    <link rel="stylesheet" href="../html/css/reset.css">
-    <link rel="stylesheet" href="../html/css/style.css">
-    <link rel="stylesheet" href="../html/css/about.css">
-    <link rel="stylesheet" href="../html/css/board.css">
+    <link rel="stylesheet" href="../html/css/style.css"> 
 </head>
 <body>
     <!-- 헤더 영역 -->
@@ -37,10 +34,10 @@
     </header>
 
     <!-- 게시판 비주얼 -->
-    <section class="board-visual">
+    <section class="page-visual">
         <div class="container">
-            <h2 class="board-title">커뮤니티</h2>
-            <p class="board-subtitle">HEM의 소식과 이야기를 나누는 공간입니다</p>
+            <h2 class="page-title">커뮤니티</h2>
+            <p class="page-subtitle">HEM의 소식과 이야기를 나누는 공간입니다</p>
         </div>
     </section>
 
@@ -144,18 +141,18 @@
     </section>
 
     <!-- 게시글 팝업 -->
-    <div class="popup-overlay">
-        <div class="popup-content">
-            <button class="popup-close" aria-label="닫기"></button>
-            <div class="popup-header">
-                <h3 class="popup-title"></h3>
-                <div class="popup-meta">
+    <div class="modal-overlay" id="boardModalOverlay">
+        <div class="modal-content modal-md">
+            <button class="modal-close" aria-label="닫기"></button>
+            <div class="modal-header">
+                <h3 class="modal-title"></h3>
+                <div class="modal-meta">
                     <span class="popup-author"></span>
                     <span class="popup-date"></span>
                     <span class="popup-views"></span>
                 </div>
             </div>
-            <div class="popup-body"></div>
+            <div class="modal-body"></div>
         </div>
     </div>
 
@@ -198,14 +195,14 @@
     </footer>
 
     <!-- 후원 팝업 -->
-    <div class="donation-popup">
-        <div class="donation-content">
-            <button class="popup-close" aria-label="닫기"></button>
-            <div class="donation-header">
-                <h3>HEM 후원하기</h3>
-                <p>건강한 교육 사역을 함께 만들어갑니다</p>
+    <div class="modal-overlay" id="donationModalOverlay">
+        <div class="modal-content modal-sm">
+            <button class="modal-close" aria-label="닫기"></button>
+            <div class="modal-header" style="text-align: center;">
+                <h3 class="modal-title">HEM 후원하기</h3>
+                <p class="modal-subtitle">건강한 교육 사역을 함께 만들어갑니다</p>
             </div>
-            <div class="donation-info">
+            <div class="modal-body">
                 <h4>후원 안내</h4>
                 <p>HEM은 여러분의 후원으로 건강한 교육 사역을 이어가고 있습니다. 정기 후원과 일시 후원을 통해 함께 동참해 주세요.</p>
                 <div class="donation-account">
@@ -222,6 +219,5 @@
     </div>
 
     <script src="../html/js/script.js"></script>
-    <script src="../html/js/board.js"></script>
 </body>
 </html> 
