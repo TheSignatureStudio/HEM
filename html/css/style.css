@@ -89,7 +89,7 @@ img {
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    line-height: 1.6; /* 기본 line-height 설정 (reset 에서 1로 설정됨) */
+    line-height: 1.6; /* Reset에서 1로 설정된 것을 덮어씁니다 */
     color: var(--text-color);
     background-color: var(--background-light);
 }
@@ -121,7 +121,7 @@ header.scrolled {
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 24px; /* 중복 가능성 있지만 레이아웃 요소라 유지 */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,7 +131,7 @@ header.scrolled {
 .logo a {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--text-color);
+    /* color: var(--text-color); */ /* Reset에서 color: inherit; 으로 처리 */
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -139,7 +139,7 @@ header.scrolled {
 
 .logo-img {
     height: 40px;
-    width: auto;
+    /* width: auto; */ /* Reset에서 처리됨 */
 }
 
 /* 모바일 메뉴 버튼 */
@@ -149,10 +149,10 @@ header.scrolled {
     justify-content: space-between;
     width: 30px;
     height: 20px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
+    /* background: transparent; */ /* Reset에서 처리됨 */
+    /* border: none; */ /* Reset에서 처리됨 */
+    /* cursor: pointer; */ /* Reset에서 처리됨 */
+    /* padding: 0; */ /* Reset에서 처리됨 */
     z-index: 1001;
 }
 
@@ -183,14 +183,16 @@ nav {
 nav ul {
     display: flex;
     gap: 2.5rem;
+    /* list-style: none; */ /* Reset에서 처리됨 */
 }
 
 nav a {
     font-weight: 500;
-    color: var(--text-color);
+    /* color: var(--text-color); */ /* Reset에서 color: inherit; 으로 처리 */
     transition: var(--transition);
     font-size: 1rem;
     position: relative;
+    /* text-decoration: none; */ /* Reset에서 처리됨 */
 }
 
 nav a::after {

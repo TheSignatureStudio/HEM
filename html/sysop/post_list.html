@@ -1,0 +1,94 @@
+<!-- Main Content -->
+<div class="content-area">
+    <div class="content-box">
+        <div class="board-detail">
+            <div class="board-header">
+                <h2 class="board-title">게시판 정보</h2>
+                <div class="board-actions">
+                    <button class="action-button button-edit">수정</button>
+                    <button class="action-button button-delete">삭제</button>
+                </div>
+            </div>
+            
+            <div class="board-info">
+                <div class="info-row">
+                    <div class="info-label">게시판 ID</div>
+                    <div class="info-value">notice</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">게시판명</div>
+                    <div class="info-value">공지사항</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">설명</div>
+                    <div class="info-value">공지사항 게시판입니다.</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">상태</div>
+                    <div class="info-value">
+                        <span class="status-badge status-active">활성화</span>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">생성일</div>
+                    <div class="info-value">2024-03-01</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">게시글 수</div>
+                    <div class="info-value">325</div>
+                </div>
+            </div>
+
+            <div class="board-posts">
+                <div class="posts-header">
+                    <h3 class="posts-title">게시글 목록</h3>
+                    <div class="posts-actions">
+                        <button class="action-button button-view"><a href="post_write.jsp">새 게시글</a></button>
+                    </div>
+                </div>
+                <table class="posts-table">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                            <th>관리</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="post_view.jsp">시스템 점검 안내</a></td>
+                            <td>관리자</td>
+                            <td>2024-03-15</td>
+                            <td>1,234</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-button button-edit">수정</button>
+                                    <button class="action-button button-delete">삭제</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="post_view.jsp">새로운 기능 추가 안내</a></td>
+                            <td>관리자</td>
+                            <td>2024-03-14</td>
+                            <td>987</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-button button-edit">수정</button>
+                                    <button class="action-button button-delete">삭제</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

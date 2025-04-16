@@ -1,0 +1,2461 @@
+@charset "utf-8";
+
+/* Reset CSS from reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    line-height: 1; /* reset.css 에서 가져옴 */
+}
+ol, ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+/* global */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+/* common layout */
+.HEM-admin-layout {
+    background-color: #f4f7f9;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    width: 240px;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-logo {
+    width: 240px;
+    height: 70px;
+    background-color: #337f4c;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.logo-text {
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.menu-item {
+    width: 240px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    background-color: #ffffff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.menu-text {
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #4c4c4c;
+    font-size: 15px;
+}
+
+.menu-item:hover {
+    background-color: #f9f9f9;
+}
+
+.menu-item.active {
+    background-color: #f2f9f4;
+}
+
+.menu-item.active .menu-text {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #337f4c;
+}
+
+/* submenu */
+.submenu {
+    display: none;
+    background-color: #fafafa;
+}
+
+.menu-item.has-submenu.active + .submenu {
+    display: block;
+}
+
+.submenu-item {
+    width: 240px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px 0 40px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.submenu-text {
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #666666;
+    font-size: 14px;
+}
+
+.submenu-item:hover {
+    background-color: #f5f5f5;
+}
+
+.submenu-item.active {
+    background-color: #f2f9f4;
+}
+
+.submenu-item.active .submenu-text {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #337f4c;
+}
+
+/* main content */
+.main-content {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+.header {
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.page-title {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #333333;
+    font-size: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-name {
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #f4f7f9;
+    border: 1px solid #e6e6e6;
+}
+
+/* content area */
+.content-area {
+    padding: 24px;
+    background-color: #f4f7f9;
+    flex: 1;
+}
+
+.content-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 32px;
+    height: auto;
+}
+
+/* post write form */
+.post-write-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.form-textarea {
+    width: 100%;
+    height: 300px;
+    padding: 12px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    resize: none;
+    background-color: #ffffff;
+}
+
+.file-upload {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.file-upload-button {
+    padding: 8px 16px;
+    background-color: #f4f7f9;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    color: #4c4c4c;
+    cursor: pointer;
+}
+
+.file-name {
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    color: #666666;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+.button-cancel {
+    background-color: #eff2f9;
+    color: #3366cc;
+}
+
+.button-submit {
+    background-color: #337f4c;
+    color: #ffffff;
+}
+
+/* focus styles */
+button:focus-visible {
+    outline: 2px solid #4a9028 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* login */
+.HEM-admin-login {
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+  
+.HEM-admin-login .div-wrapper {
+    background-color: #f4f7f9;
+    width: 1440px;
+    height: 900px;
+}
+  
+.HEM-admin-login .div {
+    position: relative;
+    width: 360px;
+    height: 400px;
+    top: 250px;
+    left: 540px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+  
+.HEM-admin-login .text {
+    position: absolute;
+    top: 39px;
+    left: 130px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #337f4c;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+  
+.HEM-admin-login .text-wrapper {
+    top: 109px;
+    left: 40px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+  
+.HEM-admin-login .div-2 {
+    top: 135px;
+    position: absolute;
+    width: 280px;
+    height: 40px;
+    left: 40px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #e6e6e6;
+}
+  
+.HEM-admin-login .text-2 {
+    top: 194px;
+    left: 40px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+  
+.HEM-admin-login .div-3 {
+    top: 220px;
+    position: absolute;
+    width: 280px;
+    height: 40px;
+    left: 40px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #e6e6e6;
+}
+  
+.HEM-admin-login .overlap-group {
+    position: absolute;
+    width: 280px;
+    height: 50px;
+    top: 290px;
+    left: 40px;
+    background-color: #337f4c;
+    border-radius: 4px;
+}
+  
+.HEM-admin-login .text-3 {
+    top: 14px;
+    left: 110px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+  
+.HEM-admin-login .text-4 {
+    top: 359px;
+    left: 148px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #337f4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* sign_up */
+.HEM-admin-signup {
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.HEM-admin-signup .div-wrapper {
+    background-color: #f4f7f9;
+    width: 1440px;
+    height: 900px;
+}
+
+.HEM-admin-signup .div {
+    position: relative;
+    width: 440px;
+    height: 600px;
+    top: 150px;
+    left: 500px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.HEM-admin-signup .text {
+    position: absolute;
+    top: 39px;
+    left: 160px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #337f4c;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-signup .text-wrapper {
+    top: 109px;
+    left: 40px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-signup .div-2 {
+    top: 135px;
+    position: absolute;
+    width: 360px;
+    height: 40px;
+    left: 40px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #e6e6e6;
+}
+
+.HEM-admin-signup .text-2 {
+    top: 194px;
+    left: 40px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-signup .div-3 {
+    top: 220px;
+    position: absolute;
+    width: 360px;
+    height: 40px;
+    left: 40px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #e6e6e6;
+}
+
+.HEM-admin-signup .text-3 {
+    top: 279px;
+    left: 40px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-signup .div-4 {
+    top: 305px;
+    position: absolute;
+    width: 360px;
+    height: 40px;
+    left: 40px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #e6e6e6;
+}
+
+.HEM-admin-signup .text-4 {
+    top: 364px;
+    left: 40px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-signup .div-5 {
+    top: 390px;
+    position: absolute;
+    width: 360px;
+    height: 40px;
+    left: 40px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #e6e6e6;
+}
+
+.HEM-admin-signup .overlap-group {
+    position: absolute;
+    width: 360px;
+    height: 50px;
+    top: 460px;
+    left: 40px;
+    background-color: #337f4c;
+    border-radius: 4px;
+}
+
+.HEM-admin-signup .text-5 {
+    top: 14px;
+    left: 140px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-signup .text-6 {
+    top: 529px;
+    left: 180px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #337f4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* dashboard */
+.HEM-admin-dashboard {
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.HEM-admin-dashboard .div {
+    background-color: #f4f7f9;
+    width: 1440px;
+    height: 900px;
+    position: relative;
+}
+
+.HEM-admin-dashboard .view {
+    position: absolute;
+    width: 240px;
+    height: 900px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-dashboard .text-wrapper {
+    position: absolute;
+    width: 240px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color: #337f4c;
+}
+
+.HEM-admin-dashboard .text {
+    top: 21px;
+    left: 80px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-dashboard .div-wrapper {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 100px;
+    left: 0;
+    background-color: #f2f9f4;
+}
+
+.HEM-admin-dashboard .text-2 {
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #337f4c;
+    font-size: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-dashboard .text-wrapper-2 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 150px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-dashboard .text-3 {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #4c4c4c;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.HEM-admin-dashboard .text-wrapper-3 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 200px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-dashboard .text-wrapper-4 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 250px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-dashboard .view-2 {
+    position: absolute;
+    width: 1200px;
+    height: 70px;
+    top: 0;
+    left: 240px;
+    background-color: #ffffff;
+}
+
+.HEM-admin-dashboard .text-4 {
+    top: 24px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #333333;
+    font-size: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-dashboard .text-5 {
+    top: 23px;
+    left: 1060px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-dashboard .div-2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 25px;
+    left: 1130px;
+    background-color: #e6e6e6;
+    border-radius: 12px;
+}
+
+.HEM-admin-dashboard .div-3 {
+    position: absolute;
+    width: 1200px;
+    height: 830px;
+    top: 70px;
+    left: 240px;
+    background-color: #f4f7f9;
+}
+
+.HEM-admin-dashboard .div-4 {
+    position: absolute;
+    width: 280px;
+    height: 160px;
+    top: 24px;
+    left: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.HEM-admin-dashboard .text-6 {
+    top: 23px;
+    left: 24px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #666666;
+    font-size: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-dashboard .text-7 {
+    top: 59px;
+    left: 24px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #337f4c;
+    font-size: 36px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-dashboard .text-8 {
+    top: 109px;
+    left: 24px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #666666;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-dashboard .div-5 {
+    position: absolute;
+    width: 280px;
+    height: 160px;
+    top: 24px;
+    left: 328px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.HEM-admin-dashboard .div-6 {
+    position: absolute;
+    width: 280px;
+    height: 160px;
+    top: 24px;
+    left: 632px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+/* boards */
+.HEM-admin-boards {
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.HEM-admin-boards .div {
+    background-color: #f4f7f9;
+    width: 1440px;
+    height: 900px;
+    position: relative;
+}
+
+.HEM-admin-boards .view {
+    position: absolute;
+    width: 240px;
+    height: 900px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-boards .text-wrapper {
+    position: absolute;
+    width: 240px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color: #337f4c;
+}
+
+.HEM-admin-boards .text {
+    top: 21px;
+    left: 80px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .div-wrapper {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 100px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-boards .text-2 {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #4c4c4c;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.HEM-admin-boards .text-wrapper-2 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 150px;
+    left: 0;
+    background-color: #f2f9f4;
+}
+
+.HEM-admin-boards .text-3 {
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #337f4c;
+    font-size: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-wrapper-3 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 200px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-boards .text-wrapper-4 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 250px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-boards .view-2 {
+    position: absolute;
+    width: 1200px;
+    height: 70px;
+    top: 0;
+    left: 240px;
+    background-color: #ffffff;
+}
+
+.HEM-admin-boards .text-4 {
+    top: 24px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #333333;
+    font-size: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-5 {
+    top: 23px;
+    left: 1060px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .div-2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 25px;
+    left: 1130px;
+    background-color: #e6e6e6;
+    border-radius: 12px;
+}
+
+.HEM-admin-boards .div-wrapper-2 {
+    position: absolute;
+    width: 1200px;
+    height: 830px;
+    top: 70px;
+    left: 240px;
+    background-color: #f4f7f9;
+}
+
+.HEM-admin-boards .div-3 {
+    position: relative;
+    width: 1152px;
+    height: 780px;
+    top: 24px;
+    left: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.HEM-admin-boards .text-6 {
+    top: 23px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #333333;
+    font-size: 18px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .overlap {
+    position: absolute;
+    width: 128px;
+    height: 40px;
+    top: 24px;
+    left: 1000px;
+    background-color: #337f4c;
+    border-radius: 4px;
+}
+
+.HEM-admin-boards .text-7 {
+    top: 9px;
+    left: 26px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .navbar {
+    position: absolute;
+    width: 1104px;
+    height: 50px;
+    top: 80px;
+    left: 24px;
+    background-color: #f4f7f9;
+}
+
+.HEM-admin-boards .text-8 {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-9 {
+    top: 15px;
+    left: 120px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-10 {
+    top: 15px;
+    left: 320px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-11 {
+    top: 15px;
+    left: 440px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-12 {
+    top: 15px;
+    left: 580px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-13 {
+    top: 15px;
+    left: 800px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-14 {
+    top: 15px;
+    left: 920px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .navbar-2 {
+    position: absolute;
+    width: 1104px;
+    height: 60px;
+    top: 130px;
+    left: 24px;
+    background-color: #ffffff;
+}
+
+.HEM-admin-boards .text-15 {
+    top: 19px;
+    left: 24px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-16 {
+    top: 19px;
+    left: 120px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-17 {
+    top: 19px;
+    left: 320px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-18 {
+    top: 19px;
+    left: 440px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .text-19 {
+    top: 19px;
+    left: 580px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .overlap-group {
+    position: absolute;
+    width: 64px;
+    height: 32px;
+    top: 14px;
+    left: 800px;
+    background-color: #e5f9ef;
+    border-radius: 16px;
+}
+
+.HEM-admin-boards .text-20 {
+    top: 5px;
+    left: 12px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #19994c;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .overlap-2 {
+    position: absolute;
+    width: 48px;
+    height: 32px;
+    top: 14px;
+    left: 920px;
+    background-color: #eff2f9;
+    border-radius: 4px;
+}
+
+.HEM-admin-boards .text-21 {
+    top: 5px;
+    left: 10px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #3366cc;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .overlap-3 {
+    position: absolute;
+    width: 48px;
+    height: 32px;
+    top: 14px;
+    left: 976px;
+    background-color: #f9efef;
+    border-radius: 4px;
+}
+
+.HEM-admin-boards .text-22 {
+    top: 5px;
+    left: 10px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #cc3333;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-boards .overlap-4 {
+    position: absolute;
+    width: 48px;
+    height: 32px;
+    top: 14px;
+    left: 1032px;
+    background-color: #337f4c;
+    border-radius: 4px;
+}
+
+.HEM-admin-boards .text-23 {
+    top: 5px;
+    left: 10px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* board */
+.HEM-admin-board {
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.HEM-admin-board .div {
+    background-color: #f4f7f9;
+    width: 1440px;
+    height: 900px;
+    position: relative;
+}
+
+.HEM-admin-board .view {
+    position: absolute;
+    width: 240px;
+    height: 900px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-board .text-wrapper {
+    position: absolute;
+    width: 240px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color: #337f4c;
+}
+
+.HEM-admin-board .text {
+    position: absolute;
+    top: 21px;
+    left: 80px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .div-wrapper {
+    top: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    left: 0;
+}
+
+.HEM-admin-board .text-2 {
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #4c4c4c;
+    font-size: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .text-wrapper-2 {
+    top: 150px;
+    background-color: #f2f9f4;
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    left: 0;
+}
+
+.HEM-admin-board .text-3 {
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #337f4c;
+    font-size: 16px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .view-2 {
+    position: absolute;
+    width: 1200px;
+    height: 70px;
+    top: 0;
+    left: 240px;
+    background-color: #ffffff;
+}
+
+.HEM-admin-board .text-4 {
+    top: 24px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #333333;
+    font-size: 20px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .div-wrapper-2 {
+    position: absolute;
+    width: 1200px;
+    height: 830px;
+    top: 70px;
+    left: 240px;
+    background-color: #f4f7f9;
+}
+
+.HEM-admin-board .div-2 {
+    position: relative;
+    width: 1152px;
+    height: 780px;
+    top: 24px;
+    left: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.HEM-admin-board .text-5 {
+    top: 23px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #333333;
+    font-size: 18px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .overlap {
+    width: 128px;
+    height: 40px;
+    top: 24px;
+    left: 1000px;
+    background-color: #337f4c;
+    position: absolute;
+    border-radius: 4px;
+}
+
+.HEM-admin-board .text-6 {
+    top: 9px;
+    left: 26px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .navbar {
+    position: absolute;
+    width: 1104px;
+    height: 50px;
+    top: 80px;
+    left: 24px;
+    background-color: #f4f7f9;
+}
+
+.HEM-admin-board .text-7 {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .text-8 {
+    top: 15px;
+    left: 120px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .text-9 {
+    top: 15px;
+    left: 500px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .text-10 {
+    top: 15px;
+    left: 640px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .text-11 {
+    top: 15px;
+    left: 800px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .text-12 {
+    top: 15px;
+    left: 920px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #4c4c4c;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .navbar-2 {
+    position: absolute;
+    width: 1104px;
+    height: 60px;
+    top: 130px;
+    left: 24px;
+    background-color: #ffffff;
+}
+
+.HEM-admin-board .text-13 {
+    top: 19px;
+    left: 24px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .p {
+    top: 19px;
+    left: 120px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .text-14 {
+    top: 19px;
+    left: 500px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .text-15 {
+    top: 19px;
+    left: 640px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .text-16 {
+    top: 19px;
+    left: 800px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .overlap-group {
+    width: 48px;
+    height: 32px;
+    top: 14px;
+    left: 920px;
+    background-color: #eff2f9;
+    position: absolute;
+    border-radius: 4px;
+}
+
+.HEM-admin-board .text-17 {
+    top: 5px;
+    left: 10px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #3366cc;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .overlap-group-2 {
+    width: 48px;
+    height: 32px;
+    top: 14px;
+    left: 976px;
+    background-color: #f9efef;
+    position: absolute;
+    border-radius: 4px;
+}
+
+.HEM-admin-board .text-18 {
+    top: 5px;
+    left: 10px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #cc3333;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.HEM-admin-board .overlap-2 {
+    width: 48px;
+    height: 32px;
+    top: 14px;
+    left: 1032px;
+    background-color: #337f4c;
+    position: absolute;
+    border-radius: 4px;
+}
+
+.HEM-admin-board .text-19 {
+    top: 5px;
+    left: 10px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* post_view */
+.HEM-admin-post-view {
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.HEM-admin-post-view .div {
+    background-color: #f4f7f9;
+    width: 1440px;
+    height: 900px;
+    position: relative;
+}
+
+.HEM-admin-post-view .view {
+    position: absolute;
+    width: 240px;
+    height: 900px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-post-view .text-wrapper {
+    position: absolute;
+    width: 240px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color: #337f4c;
+}
+
+.HEM-admin-post-view .text {
+    position: absolute;
+    top: 21px;
+    left: 80px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.HEM-admin-post-view .div-wrapper {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 100px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-post-view .text-2 {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #4c4c4c;
+    font-size: 16px;
+}
+
+.HEM-admin-post-view .text-wrapper-2 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 150px;
+    left: 0;
+    background-color: #f2f9f4;
+}
+
+.HEM-admin-post-view .text-3 {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #337f4c;
+    font-size: 16px;
+}
+
+.HEM-admin-post-view .view-2 {
+    position: absolute;
+    width: 1200px;
+    height: 70px;
+    top: 0;
+    left: 240px;
+    background-color: #ffffff;
+}
+
+.HEM-admin-post-view .text-4 {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #333333;
+    font-size: 20px;
+}
+
+.HEM-admin-post-view .div-wrapper-2 {
+    position: absolute;
+    width: 1200px;
+    height: 830px;
+    top: 70px;
+    left: 240px;
+    background-color: #f4f7f9;
+}
+
+.HEM-admin-post-view .content-box {
+    position: relative;
+    width: 1152px;
+    height: 780px;
+    top: 24px;
+    left: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.HEM-admin-post-view .post-header {
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.HEM-admin-post-view .post-title {
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.HEM-admin-post-view .post-info {
+    display: flex;
+    gap: 24px;
+    color: #666;
+    font-size: 14px;
+    font-family: "Inter-Regular", Helvetica;
+}
+
+.HEM-admin-post-view .post-info span {
+    position: relative;
+}
+
+.HEM-admin-post-view .post-info span:not(:last-child):after {
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    width: 1px;
+    height: 12px;
+    background-color: #e6e6e6;
+    transform: translateY(-50%);
+}
+
+.HEM-admin-post-view .post-content {
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 32px;
+    white-space: pre-line;
+}
+
+.HEM-admin-post-view .action-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+}
+
+.HEM-admin-post-view .action-button {
+    min-width: 80px;
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+/* post_write */
+.HEM-admin-post-write {
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.HEM-admin-post-write .div {
+    background-color: #f4f7f9;
+    width: 1440px;
+    height: 900px;
+    position: relative;
+}
+
+.HEM-admin-post-write .view {
+    position: absolute;
+    width: 240px;
+    height: 900px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-post-write .text-wrapper {
+    position: absolute;
+    width: 240px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color: #337f4c;
+}
+
+.HEM-admin-post-write .text {
+    position: absolute;
+    top: 21px;
+    left: 80px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.HEM-admin-post-write .div-wrapper {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 100px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.HEM-admin-post-write .text-2 {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #4c4c4c;
+    font-size: 16px;
+}
+
+.HEM-admin-post-write .text-wrapper-2 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 150px;
+    left: 0;
+    background-color: #f2f9f4;
+}
+
+.HEM-admin-post-write .text-3 {
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #337f4c;
+    font-size: 16px;
+}
+
+.HEM-admin-post-write .view-2 {
+    position: absolute;
+    width: 1200px;
+    height: 70px;
+    top: 0;
+    left: 240px;
+    background-color: #ffffff;
+}
+
+.HEM-admin-post-write .text-4 {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #333333;
+    font-size: 20px;
+}
+
+.HEM-admin-post-write .div-wrapper-2 {
+    position: absolute;
+    width: 1200px;
+    height: 830px;
+    top: 70px;
+    left: 240px;
+    background-color: #f4f7f9;
+}
+
+.HEM-admin-post-write .content-box {
+    position: relative;
+    width: 1152px;
+    height: 780px;
+    top: 24px;
+    left: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.HEM-admin-post-write .post-write-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.HEM-admin-post-write .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.HEM-admin-post-write .form-label {
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #4c4c4c;
+    font-size: 14px;
+}
+
+.HEM-admin-post-write .form-input {
+    width: 100%;
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.HEM-admin-post-write .form-textarea {
+    width: 100%;
+    height: 300px;
+    padding: 12px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    resize: none;
+    background-color: #ffffff;
+}
+
+.HEM-admin-post-write .file-upload {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.HEM-admin-post-write .file-upload-button {
+    padding: 8px 16px;
+    background-color: #f4f7f9;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    color: #4c4c4c;
+    cursor: pointer;
+}
+
+.HEM-admin-post-write .file-name {
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    color: #666666;
+}
+
+.HEM-admin-post-write .button-group {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.HEM-admin-post-write .button {
+    padding: 8px 24px;
+    border-radius: 4px;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.HEM-admin-post-write .button-cancel {
+    background-color: #eff2f9;
+    color: #3366cc;
+}
+
+.HEM-admin-post-write .button-submit {
+    background-color: #337f4c;
+    color: #ffffff;
+}
+
+/* Dashboard Styles */
+.dashboard-stats {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+}
+
+.stat-card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 24px;
+    min-width: 240px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-title {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.stat-value {
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.stat-change {
+    color: #4CAF50;
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-name {
+    font-size: 16px;
+    color: #666;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eee;
+}
+
+.content-area {
+    background: #f5f5f5;
+    border-radius: 8px;
+    margin: 24px;
+}
+
+/* Board List Styles */
+.board-list {
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: 24px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.board-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.board-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.board-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.board-table th {
+    background: #f5f5f5;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #666;
+    border-bottom: 2px solid #eee;
+}
+
+.board-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.board-table tr:hover {
+    background: #f9f9f9;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-active {
+    background: #e5f9ef;
+    color: #19994c;
+}
+
+.status-pending {
+    background: #eff2f9;
+    color: #3366cc;
+}
+
+.status-inactive {
+    background: #f9efef;
+    color: #cc3333;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.action-button {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.button-edit {
+    background: #eff2f9;
+    color: #3366cc;
+}
+
+.button-delete {
+    background: #f9efef;
+    color: #cc3333;
+}
+
+.button-view {
+    background: #337f4c;
+    color: #ffffff;
+}
+
+/* Board Detail Styles */
+.board-detail {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.board-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.board-info {
+    margin-bottom: 32px;
+}
+
+.info-row {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.info-label {
+    width: 120px;
+    color: #666;
+    font-weight: 500;
+}
+
+.info-value {
+    flex: 1;
+    color: #333;
+}
+
+/* Post List in Board Detail */
+.board-posts {
+    margin-top: 32px;
+}
+
+.posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.posts-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.posts-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.posts-table th {
+    background: #f5f5f5;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #666;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.posts-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+/* Post View Styles */
+.post-header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.post-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.post-info {
+    display: flex;
+    gap: 24px;
+    color: #666;
+    font-size: 14px;
+}
+
+.post-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+/* Common Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.action-button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+.button-edit {
+    background: #eff2f9;
+    color: #3366cc;
+}
+
+.button-delete {
+    background: #f9efef;
+    color: #cc3333;
+}
+
+.button-view {
+    background: #337f4c;
+    color: #ffffff;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-active {
+    background: #e5f9ef;
+    color: #19994c;
+}
+
+.status-pending {
+    background: #eff2f9;
+    color: #3366cc;
+}
+
+.status-inactive {
+    background: #f9efef;
+    color: #cc3333;
+}
