@@ -4,33 +4,72 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../html/css/sysop.css" />
     <script src="../html/js/sysop.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <script>
+        // Apply initial sidebar state class to body BEFORE rendering
+        (function() {
+            try {
+                if (localStorage.getItem('sidebarCollapsed') === 'true') {
+                    document.body.classList.add('sidebar-is-collapsed');
+                }
+            } catch (e) {
+                console.error('Could not access localStorage: ', e);
+            }
+        })();
+    </script>
     <div class="HEM-admin-layout">
         <!-- Sidebar -->
         <div class="sidebar">
             <div class="sidebar-logo">
-                <a href="dashboard.jsp" class="logo-text">HEM</a>
+                <a href="/sysop/dashboard.jsp" class="sidebar-logo">
+                    <!-- 아이콘 로고 (평소엔 숨김) -->
+                    <span class="logo-icon">
+                        <img src="../html/image/logo_hem.png" alt="HEM">
+                    </span>
+                    <!-- 텍스트 로고 (평소엔 보임) -->
+                    <span class="logo-text">HEM</span>
+                </a>
             </div>
             <nav class="sidebar-menu">
                 <a href="dashboard.jsp" class="menu-item">
+                    <i class="fas fa-tachometer-alt"></i>
                     <span class="menu-text">대시보드</span>
                 </a>
                 <a href="boards.jsp" class="menu-item has-submenu">
+                    <i class="fas fa-clipboard-list"></i>
                     <span class="menu-text">게시판 관리</span>
                 </a>
                 <div class="submenu">
                     <a href="post_list.jsp" class="submenu-item">
-                        <span class="submenu-text">공지사항 관리</span>
+                        <i class="fas fa-bullhorn"></i>
+                        <span class="submenu-text">커뮤니티 관리</span>
                     </a>
                     <a href="boards/qt.jsp" class="submenu-item">
-                        <span class="submenu-text">QT 관리</span>
+                        <i class="fas fa-question-circle"></i>
+                        <span class="submenu-text">문의사항 관리</span>
+                    </a>
+                    <a href="boards/qt.jsp" class="submenu-item">
+                        <i class="fas fa-book"></i>
+                        <span class="submenu-text">비전트리 관리</span>
                     </a>
                 </div>
                 <a href="user_list.jsp" class="menu-item">
+                    <i class="fas fa-users"></i>
                     <span class="menu-text">회원 관리</span>
                 </a>
+                <a href="setting.jsp" class="menu-item">
+                    <i class="fas fa-cog"></i>
+                    <span class="menu-text">설정</span>
+                </a>
             </nav>
+            <!-- 사이드바 요소 내부 맨 아래에 추가 -->
+            <div class="sidebar-toggle">
+                <button id="sidebarToggleBtn" type="button" title="사이드바 토글">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
         </div>
 
         <!-- Main Content Area -->

@@ -1,0 +1,17 @@
+SMAP
+_setting__jsp.java
+JSP
+*S JSP
+*F
++ 1 init.jsp
+sysop/./../init.jsp
++ 2 init.jsp
+sysop/./init.jsp
++ 3 setting.jsp
+sysop/setting.jsp
+*L
+1#1,58:59
+1#2,3:117
+1#3,7:120
+7#3:127
+*E

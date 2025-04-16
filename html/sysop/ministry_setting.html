@@ -1,0 +1,174 @@
+            <!-- Content Area -->
+            <section class="content-area">
+                <div class="content-box">
+                    <h2>사역 소개 페이지 관리</h2>
+
+                    <!-- Tab Buttons -->
+                    <div class="tab-container">
+                        <a href="setting.jsp?tab=education" class="tab-button" data-tab="education">교회학교 세움</a>
+                        <a href="setting.jsp?tab=vision" class="tab-button" data-tab="vision">비전트리 프로그램</a>
+                        <a href="setting.jsp?tab=network" class="tab-button" data-tab="network">교육 네트워크</a>
+                    </div>
+
+                    <form id="ministrySettingsForm" action="update_ministry_settings.jsp" method="post" enctype="multipart/form-data">
+
+                        <!-- 교회학교 세움 섹션 -->
+                        <fieldset class="form-section" id="education-section">
+                            <legend>교회학교 세움</legend>
+                            <div class="form-group">
+                                <label for="edu-overview-title" class="form-label">개요 제목</label>
+                                <input type="text" id="edu-overview-title" name="edu_overview_title" class="form-input" placeholder="예: 교회학교 세움">
+                            </div>
+                            <div class="form-group">
+                                <label for="edu-overview-text" class="form-label">개요 내용</label>
+                                <textarea id="edu-overview-text" name="edu_overview_text" class="form-textarea" rows="5" placeholder="HEM은 교회학교의 건강한 성장을 위해..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="edu-approach-title" class="form-label">교육 접근 방식 제목</label>
+                                <input type="text" id="edu-approach-title" name="edu_approach_title" class="form-input" placeholder="예: 교육 접근 방식">
+                            </div>
+                            <div class="form-group">
+                                <label for="edu-approach-list" class="form-label">교육 접근 방식 목록 (항목별 줄바꿈)</label>
+                                <textarea id="edu-approach-list" name="edu_approach_list" class="form-textarea" rows="6" placeholder="성경 기반의 체계적인 교육 커리큘럼&#10;교사 교육 및 멘토링 프로그램..."></textarea>
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">메인 이미지</label>
+                                <p>현재 이미지: <span id="edu-main-img-current">파일 없음</span></p>
+                                <input type="file" id="edu-main-img" name="edu_main_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 1</label>
+                                <p>현재 이미지: <span id="edu-sub1-img-current">파일 없음</span></p>
+                                <input type="file" id="edu-sub1-img" name="edu_sub1_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 2</label>
+                                <p>현재 이미지: <span id="edu-sub2-img-current">파일 없음</span></p>
+                                <input type="file" id="edu-sub2-img" name="edu_sub2_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 3</label>
+                                <p>현재 이미지: <span id="edu-sub3-img-current">파일 없음</span></p>
+                                <input type="file" id="edu-sub3-img" name="edu_sub3_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 4</label>
+                                <p>현재 이미지: <span id="edu-sub4-img-current">파일 없음</span></p>
+                                <input type="file" id="edu-sub4-img" name="edu_sub4_img" class="form-input-file" accept="image/*">
+                            </div>
+                        </fieldset>
+
+                        <!-- 비전트리 프로그램 섹션 -->
+                        <fieldset class="form-section" id="vision-section">
+                            <legend>비전트리 프로그램</legend>
+                            <div class="form-group">
+                                <label for="vision-overview-title" class="form-label">개요 제목</label>
+                                <input type="text" id="vision-overview-title" name="vision_overview_title" class="form-input" placeholder="예: 비전트리 프로그램">
+                            </div>
+                            <div class="form-group">
+                                <label for="vision-overview-text" class="form-label">개요 내용</label>
+                                <textarea id="vision-overview-text" name="vision_overview_text" class="form-textarea" rows="5" placeholder="비전트리 프로그램은 교회학교의 비전과 목표를..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="vision-approach-title" class="form-label">프로그램 구성 제목</label>
+                                <input type="text" id="vision-approach-title" name="vision_approach_title" class="form-input" placeholder="예: 프로그램 구성">
+                            </div>
+                            <div class="form-group">
+                                <label for="vision-approach-list" class="form-label">프로그램 구성 목록 (항목별 줄바꿈)</label>
+                                <textarea id="vision-approach-list" name="vision_approach_list" class="form-textarea" rows="6" placeholder="비전 수립 워크샵&#10;목표 설정 및 실행 계획 수립..."></textarea>
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">메인 이미지</label>
+                                <p>현재 이미지: <span id="vision-main-img-current">파일 없음</span></p>
+                                <input type="file" id="vision-main-img" name="vision_main_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 1</label>
+                                <p>현재 이미지: <span id="vision-sub1-img-current">파일 없음</span></p>
+                                <input type="file" id="vision-sub1-img" name="vision_sub1_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 2</label>
+                                <p>현재 이미지: <span id="vision-sub2-img-current">파일 없음</span></p>
+                                <input type="file" id="vision-sub2-img" name="vision_sub2_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 3</label>
+                                <p>현재 이미지: <span id="vision-sub3-img-current">파일 없음</span></p>
+                                <input type="file" id="vision-sub3-img" name="vision_sub3_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 4</label>
+                                <p>현재 이미지: <span id="vision-sub4-img-current">파일 없음</span></p>
+                                <input type="file" id="vision-sub4-img" name="vision_sub4_img" class="form-input-file" accept="image/*">
+                            </div>
+                        </fieldset>
+
+                        <!-- 교육 네트워크 섹션 -->
+                        <fieldset class="form-section" id="network-section">
+                            <legend>교육 네트워크</legend>
+                            <div class="form-group">
+                                <label for="network-video-title" class="form-label">영상 섹션 제목</label>
+                                <input type="text" id="network-video-title" name="network_video_title" class="form-input" placeholder="예: HEMpowering 교육 영상">
+                            </div>
+                            <div class="form-group">
+                                <label for="network-video-url" class="form-label">유튜브 영상 URL (Embed URL)</label>
+                                <input type="url" id="network-video-url" name="network_video_url" class="form-input" placeholder="https://www.youtube.com/embed/...">
+                            </div>
+                            <div class="form-group">
+                                <label for="network-playlist-text" class="form-label">재생목록 링크 텍스트</label>
+                                <input type="text" id="network-playlist-text" name="network_playlist_text" class="form-input" placeholder="더 많은 HEMpowering 교육 영상이 궁금하다면?">
+                            </div>
+                            <div class="form-group">
+                                <label for="network-playlist-url" class="form-label">재생목록 URL</label>
+                                <input type="url" id="network-playlist-url" name="network_playlist_url" class="form-input" placeholder="https://www.youtube.com/playlist?list=...">
+                            </div>
+                            <div class="form-group">
+                                <label for="network-overview-title" class="form-label">개요 제목</label>
+                                <input type="text" id="network-overview-title" name="network_overview_title" class="form-input" placeholder="예: 교육 네트워크">
+                            </div>
+                            <div class="form-group">
+                                <label for="network-overview-text" class="form-label">개요 내용</label>
+                                <textarea id="network-overview-text" name="network_overview_text" class="form-textarea" rows="5" placeholder="HEM은 전국 교회학교 교사들과 교육자들을 연결하여..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="network-approach-title" class="form-label">네트워크 활동 제목</label>
+                                <input type="text" id="network-approach-title" name="network_approach_title" class="form-input" placeholder="예: 네트워크 활동">
+                            </div>
+                            <div class="form-group">
+                                <label for="network-approach-list" class="form-label">네트워크 활동 목록 (항목별 줄바꿈)</label>
+                                <textarea id="network-approach-list" name="network_approach_list" class="form-textarea" rows="6" placeholder="분기별 교육 세미나 개최&#10;온라인 교육 컨퍼런스..."></textarea>
+                            </div>
+                           <div class="form-group image-upload-group">
+                                <label class="form-label">메인 이미지</label>
+                                <p>현재 이미지: <span id="network-main-img-current">파일 없음</span></p>
+                                <input type="file" id="network-main-img" name="network_main_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 1</label>
+                                <p>현재 이미지: <span id="network-sub1-img-current">파일 없음</span></p>
+                                <input type="file" id="network-sub1-img" name="network_sub1_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 2</label>
+                                <p>현재 이미지: <span id="network-sub2-img-current">파일 없음</span></p>
+                                <input type="file" id="network-sub2-img" name="network_sub2_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 3</label>
+                                <p>현재 이미지: <span id="network-sub3-img-current">파일 없음</span></p>
+                                <input type="file" id="network-sub3-img" name="network_sub3_img" class="form-input-file" accept="image/*">
+                            </div>
+                            <div class="form-group image-upload-group">
+                                <label class="form-label">서브 이미지 4</label>
+                                <p>현재 이미지: <span id="network-sub4-img-current">파일 없음</span></p>
+                                <input type="file" id="network-sub4-img" name="network_sub4_img" class="form-input-file" accept="image/*">
+                            </div>
+                        </fieldset>
+
+                        <div class="button-group" style="justify-content: flex-end;">
+                            <button type="submit" class="button button-submit">저장</button>
+                        </div>
+                    </form>
+                </div>
+            </section>

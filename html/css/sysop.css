@@ -95,6 +95,7 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 1px 0 2px rgba(0, 0, 0, 0.05);
+    transition: width 0.3s ease;
 }
 
 .sidebar-logo {
@@ -112,6 +113,17 @@ body {
     color: #ffffff;
     font-size: 24px;
     text-decoration: none;
+}
+
+.logo-icon {
+    display: none;
+}
+
+.sidebar-logo .logo-icon img {
+    height: 30px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .sidebar-menu {
@@ -154,11 +166,12 @@ body {
 
 /* submenu */
 .submenu {
-    display: none;
+    display: none; /* Hide submenus by default */
     background-color: #fafafa;
 }
 
-.menu-item.has-submenu.active + .submenu {
+/* Show submenu when parent has .submenu-open class */
+.menu-item.has-submenu.submenu-open + .submenu {
     display: block;
 }
 
@@ -167,9 +180,23 @@ body {
     height: 40px;
     display: flex;
     align-items: center;
-    padding: 0 24px 0 40px;
+    padding: 0 24px 0 48px;
     text-decoration: none;
     transition: all 0.2s ease;
+}
+
+/* Style for submenu icons */
+.submenu-item i {
+    margin-right: 10px; /* Add space between icon and text */
+    font-size: 14px; /* Match text size */
+    color: #666666; /* Match default text color */
+    width: 16px; /* Optional: Fixed width for alignment */
+    text-align: center; /* Center icon within its width */
+    flex-shrink: 0; /* Prevent icon shrinking */
+}
+
+.submenu-item.active i {
+    color: #337f4c; /* Match active text color */
 }
 
 .submenu-text {
@@ -200,6 +227,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    transition: width 0.3s ease, margin-left 0.3s ease;
 }
 
 /* header */
@@ -277,25 +305,22 @@ body {
 
 .form-input {
     width: 100%;
-    height: 40px;
-    padding: 8px 12px;
+    padding: 10px;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
-    font-family: "Inter-Regular", Helvetica;
     font-size: 14px;
-    background-color: #ffffff;
+    color: #333;
 }
 
 .form-textarea {
     width: 100%;
-    height: 300px;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
-    font-family: "Inter-Regular", Helvetica;
     font-size: 14px;
-    resize: none;
-    background-color: #ffffff;
+    color: #333;
+    min-height: 100px;
+    resize: vertical;
 }
 
 .file-upload {
@@ -323,32 +348,31 @@ body {
 
 .button-group {
     display: flex;
+    justify-content: flex-end;
     gap: 10px;
-    margin-top: 24px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
 }
 
-.button {
-    width: 100px;
-    height: 40px;
-    border-radius: 4px;
-    font-family: "Inter-Medium", Helvetica;
-    font-weight: 500;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.button-submit {
+    padding: 10px 20px;
+    background-color: #337f4c;
+    color: white;
     border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button-submit:hover {
+    background-color: #2a6b3f;
 }
 
 .button-cancel {
     background-color: #eff2f9;
     color: #3366cc;
-}
-
-.button-submit {
-    background-color: #337f4c;
-    color: #ffffff;
 }
 
 /* focus styles */
@@ -2032,6 +2056,7 @@ a {
     padding: 24px;
 }
 
+
 .HEM-admin-post-write .post-write-form {
     display: flex;
     flex-direction: column;
@@ -2053,25 +2078,22 @@ a {
 
 .HEM-admin-post-write .form-input {
     width: 100%;
-    height: 40px;
-    padding: 8px 12px;
+    padding: 10px;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
-    font-family: "Inter-Regular", Helvetica;
     font-size: 14px;
-    background-color: #ffffff;
+    color: #333;
 }
 
 .HEM-admin-post-write .form-textarea {
     width: 100%;
-    height: 300px;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
-    font-family: "Inter-Regular", Helvetica;
     font-size: 14px;
-    resize: none;
-    background-color: #ffffff;
+    color: #333;
+    min-height: 100px;
+    resize: vertical;
 }
 
 .HEM-admin-post-write .file-upload {
@@ -2099,13 +2121,15 @@ a {
 
 .HEM-admin-post-write .button-group {
     display: flex;
-    gap: 12px;
     justify-content: flex-end;
-    margin-top: 24px;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
 }
 
 .HEM-admin-post-write .button {
-    padding: 8px 24px;
+    padding: 10px 20px;
     border-radius: 4px;
     font-family: "Inter-Medium", Helvetica;
     font-size: 14px;
@@ -2119,8 +2143,18 @@ a {
 }
 
 .HEM-admin-post-write .button-submit {
+    padding: 10px 20px;
     background-color: #337f4c;
-    color: #ffffff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.HEM-admin-post-write .button-submit:hover {
+    background-color: #2a6b3f;
 }
 
 /* Dashboard Styles */
@@ -2503,4 +2537,510 @@ a {
     border: none;
     cursor: pointer;
     white-space: nowrap;
+}
+
+.content-box > h2 {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+
+/* Sidebar Toggle Button Styles */
+.sidebar-toggle {
+    position: absolute; /* Position relative to the sidebar */
+    bottom: 10px;
+    right: 10px;
+    z-index: 10; /* Ensure it's above other sidebar content */
+}
+
+#sidebarToggleBtn {
+    background-color: rgba(0, 0, 0, 0.05); /* Subtle background */
+    border: none;
+    border-radius: 50%; /* Make it round */
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #666; /* Default button color, icon color is set below */
+    transition: background-color 0.2s ease;
+    padding: 0;
+}
+
+#sidebarToggleBtn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Collapsed Sidebar Styles based on body class */
+body.sidebar-is-collapsed .sidebar {
+    width: 60px; /* Adjust collapsed width */
+    overflow: hidden; /* Hide content that overflows */
+}
+
+body.sidebar-is-collapsed .sidebar .sidebar-logo .logo-text {
+    display: none; /* Hide logo text */
+}
+
+body.sidebar-is-collapsed .sidebar .sidebar-logo .logo-icon {
+    display: inline-block; /* Show logo icon */
+    /* Add any necessary styling for the icon wrapper */
+}
+
+body.sidebar-is-collapsed .sidebar .sidebar-logo .logo-icon img {
+    height: 30px; /* Adjust icon size as needed */
+    width: auto;
+    display: block; /* Helps with centering if needed */
+    margin: 0 auto; /* Center the image */
+    /* Apply filter to make the image appear white in collapsed state */
+    filter: brightness(0) invert(1);
+}
+
+body.sidebar-is-collapsed .sidebar .sidebar-logo {
+    width: 100%; /* Ensure the logo container fits the collapsed sidebar */
+    padding-left: 0;
+    justify-content: center; /* Center the icon logo horizontally */
+    align-items: center; /* Center the icon logo vertically */
+    text-align: center; /* Backup centering for inline-block */
+}
+
+body.sidebar-is-collapsed .sidebar .menu-text,
+body.sidebar-is-collapsed .sidebar .submenu-text {
+    display: none;
+}
+
+/* Hide the entire submenu block when collapsed */
+body.sidebar-is-collapsed .sidebar .submenu {
+    display: none;
+}
+
+body.sidebar-is-collapsed .sidebar .menu-item {
+    justify-content: center; /* Center icons */
+    padding: 0 10px; /* Adjust padding */
+    width: 100%; /* Make items fill collapsed sidebar width */
+}
+
+/* Style submenu items in collapsed state (Though they are hidden by the rule above) */
+/* Keep rules for consistency in case display rule is changed later */
+body.sidebar-is-collapsed .sidebar .submenu-item {
+    width: 100%;
+    padding: 0 10px; /* Match menu-item padding */
+    justify-content: center; /* Center icon */
+}
+
+/* Remove margin and adjust size for ALL icons in collapsed state */
+body.sidebar-is-collapsed .sidebar .menu-item i,
+body.sidebar-is-collapsed .sidebar .submenu-item i {
+    margin-right: 0;
+    font-size: 18px; /* Consistent larger size for icons */
+    padding: 0;
+    width: auto; /* Reset width for centering */
+    /* Color is handled by respective .active rules */
+}
+
+body.sidebar-is-collapsed .sidebar .sidebar-toggle {
+    /* Center the button horizontally in collapsed state */
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto; /* Remove conflicting right property */
+    /* Keep existing vertical position and other properties */
+    position: absolute; /* Ensure positioning context */
+    bottom: 10px;
+    z-index: 10;
+}
+
+/* Adjust Main Content Margin when Sidebar is Collapsed */
+body.sidebar-is-collapsed .main-content {
+    margin-left: 60px; /* Match collapsed sidebar width */
+    width: calc(100% - 60px); /* Expand width */
+}
+
+/* Default (Open) State Icon Styles */
+.menu-item i {
+    margin-right: 12px; /* Space between icon and text */
+    text-align: center;
+    font-size: 16px; /* Default icon size */
+    color: #666; /* Default icon color */
+    flex-shrink: 0; /* Prevent icon shrinking */
+    padding: 0 4px; /* Add slight horizontal padding */
+    width: 18px; /* Explicit width */
+}
+.menu-item.active i {
+    color: #337f4c; /* Active menu icon color */
+}
+
+.submenu-item i {
+    margin-right: 10px; /* Add space between icon and text */
+    font-size: 14px; /* Match text size */
+    color: #666666; /* Match default text color */
+    width: 16px; /* Optional: Fixed width for alignment */
+    text-align: center; /* Center icon within its width */
+    flex-shrink: 0; /* Prevent icon shrinking */
+}
+
+.submenu-item.active i {
+    color: #337f4c; /* Match active text color */
+}
+
+/* --- Collapsed State Styles --- */
+
+body.sidebar-is-collapsed .sidebar .menu-text,
+body.sidebar-is-collapsed .sidebar .submenu-text {
+    display: none; /* Hide text */
+}
+
+/* Keep submenu block visible when collapsed */
+body.sidebar-is-collapsed .sidebar .submenu {
+    background-color: transparent; /* Remove background */
+    /* display: block; <- No need, structure remains */
+}
+
+body.sidebar-is-collapsed .sidebar .menu-item,
+body.sidebar-is-collapsed .sidebar .submenu-item {
+    justify-content: center; /* Center icons */
+    padding: 0 10px; /* Adjust padding */
+    width: 100%; /* Make items fill collapsed sidebar width */
+}
+
+/* Remove margin and adjust size for ALL icons in collapsed state */
+body.sidebar-is-collapsed .sidebar .menu-item i,
+body.sidebar-is-collapsed .sidebar .submenu-item i {
+    margin-right: 0;
+    font-size: 18px; /* Consistent larger size for icons */
+    padding: 0;
+    width: auto; /* Reset width for centering */
+    /* Color is handled by respective .active rules */
+}
+
+/* --- setting.html Tab Styles --- */
+.tab-container {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-bottom: none;
+    margin-right: 5px;
+    border-radius: 4px 4px 0 0;
+    background-color: #f9f9f9;
+    color: #666;
+    text-decoration: none; /* For anchor tags */
+    display: inline-block; /* For anchor tags */
+    transition: background-color 0.3s, color 0.3s;
+}
+.tab-button:hover {
+    background-color: #eee;
+}
+.tab-button.active {
+    background-color: #ffffff;
+    border-color: #eee #eee #fff;
+    color: #337f4c;
+    font-weight: 600;
+}
+.form-section {
+    display: none; /* Hide all sections by default */
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-top: -1px; /* Overlap with tab border */
+    border-radius: 0 0 4px 4px;
+    background-color: #fff; /* Ensure background for overlapping border */
+}
+.form-section.active {
+    display: block; /* Show active section */
+}
+.form-section legend {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0 10px;
+    color: #337f4c;
+}
+/* Ensure proper spacing for form groups within fieldset */
+.form-section .form-group {
+    margin-bottom: 15px; /* Add space between form groups */
+}
+.form-section .form-group:last-child {
+    margin-bottom: 0; /* Remove margin from last group */
+}
+/* Style for current image display */
+.image-upload-group p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+}
+ /* Adjust button group margin */
+#ministrySettingsForm .button-group {
+     margin-top: 20px;
+}
+
+/* Board List Table Styles */
+.board-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.board-list-table th {
+    background: #f5f5f5;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #666;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.board-list-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.board-list-table tr:hover {
+    background: #f9f9f9;
+}
+
+.board-list-table a {
+    color: #333;
+    text-decoration: none;
+}
+
+.board-list-table a:hover {
+    color: #337f4c;
+}
+
+.board-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px 0;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.button-search {
+    padding: 8px 16px;
+    background-color: #337f4c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-search:hover {
+    background-color: #2a6b3f;
+}
+
+.text-button {
+    color: #337f4c;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.text-button:hover {
+    background-color: #f2f9f4;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.page-link {
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #666;
+    text-decoration: none;
+}
+
+.page-link:hover {
+    background-color: #f5f5f5;
+}
+
+.page-link.active {
+    background-color: #337f4c;
+    color: white;
+}
+
+/* Main Settings Form Styles - Updated */
+.form-section {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+    display: block; /* Ensure it's displayed */
+}
+
+.form-section.active {
+    display: block; /* Explicitly show active sections */
+}
+
+.form-section legend {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    width: auto; /* Fix width issue */
+    display: block;
+}
+
+.form-section p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.image-upload-group {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box;
+}
+
+.image-upload-group .form-label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.image-upload-group p {
+    color: #666;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.form-input-file {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.content-block {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box;
+}
+
+.content-block h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Main Settings Specific Styles */
+.content-block {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content-block h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.content-block .form-group {
+    margin-bottom: 15px;
+}
+
+.content-block .form-group:last-child {
+    margin-bottom: 0;
+}
+
+#mainSettingsForm .form-section {
+    display: block;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+#mainSettingsForm .form-section.active {
+    display: block;
+}
+
+#mainSettingsForm .image-upload-group {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#mainSettingsForm .image-upload-group:last-child {
+    margin-bottom: 0;
+}
+
+#mainSettingsForm .form-input-file {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    background: #fff;
+}
+
+#mainSettingsForm .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+#mainSettingsForm .button-submit {
+    background-color: #337f4c;
+    color: #fff;
+    padding: 10px 20px;
+    min-width: 120px;
+    text-align: center;
 }
