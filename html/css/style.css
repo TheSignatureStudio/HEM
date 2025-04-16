@@ -188,11 +188,9 @@ nav ul {
 
 nav a {
     font-weight: 500;
-    /* color: var(--text-color); */ /* Reset에서 color: inherit; 으로 처리 */
     transition: var(--transition);
     font-size: 1rem;
     position: relative;
-    /* text-decoration: none; */ /* Reset에서 처리됨 */
 }
 
 nav a::after {
@@ -210,8 +208,15 @@ nav a:hover {
     color: var(--primary-color);
 }
 
-nav a:hover::after {
+nav a:hover::after, /* 호버 시 밑줄 */
+nav a.active::after { /* 활성화 시 밑줄 */
     width: 100%;
+}
+
+/* 활성화된 네비게이션 링크 스타일 */
+nav a.active {
+    color: var(--primary-color); /* 활성화 시 텍스트 색상 */
+    font-weight: 700; /* 활성화 시 굵게 (선택 사항) */
 }
 
 /* 슬라이더 섹션 */
@@ -657,49 +662,47 @@ footer::before {
         gap: 2rem;
     }
 
-    /* 태블릿에서 3칸 아이템 2칸으로 조정 */
-    .content-item.span-3 {
-        grid-column: span 2;
+    /* 2열 레이아웃에서 span 조정 */
+    .content-grid .content-item.span-1,
+    .content-grid .content-item.span-2 {
+        grid-column: span 1; /* 1칸 또는 2칸짜리는 모두 1칸으로 */
     }
 
-    .content-item.span-3 .content-image {
-        height: 300px;
+    .content-grid .content-item.span-3 {
+        grid-column: span 2; /* 3칸짜리는 2칸(한 줄 전체)으로 */
+    }
+
+    /* 이미지 높이 통일 (선택 사항) */
+    .content-grid .content-item .content-image {
+        height: 240px; /* 2열일 때 모든 이미지 높이 통일 */
     }
 }
 
 @media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr; /* 1열 레이아웃 */
+        gap: 1.5rem;
+    }
+
+    /* 모바일(1열)에서 모든 아이템은 1칸 차지 */
+    .content-grid .content-item,
+    .content-grid .content-item.span-1,
+    .content-grid .content-item.span-2,
+    .content-grid .content-item.span-3 {
+        grid-column: span 1; /* 모든 아이템 span 1로 명시 */
+    }
+
+    /* 이미지 높이 재조정 (필요시) */
+    .content-grid .content-item .content-image {
+        height: 240px; /* 1열일 때 이미지 높이 */
+    }
+
     .header-container {
         padding: 0 1.5rem;
     }
 
     .notice-item {
         padding: 1.25rem 1.5rem;
-    }
-
-    .content-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    /* 모바일에서 모든 아이템 1칸으로 조정 */
-    .content-item.span-2,
-    .content-item.span-3 {
-        grid-column: span 1;
-    }
-
-    .content-item.span-2 .content-image,
-    .content-item.span-3 .content-image {
-        height: 240px;
-    }
-
-    .content-item.span-2 .content-text h3,
-    .content-item.span-3 .content-text h3 {
-        font-size: 1.4rem;
-    }
-
-    .content-item.span-2 .content-text p,
-    .content-item.span-3 .content-text p {
-        font-size: 1rem;
     }
 
     .footer-content {

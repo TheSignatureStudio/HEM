@@ -1,0 +1,47 @@
+            <div class="content-area">
+                <div class="board-list">
+                    <div class="board-header">
+                        <h2 class="board-title">회원 검색</h2>
+                        <form class="search-form" style="flex-grow: 1; display: flex; gap: 10px; margin-left: 20px;">
+                            <input type="text" class="search-input" placeholder="이름 또는 이메일로 검색..." />
+                            <button type="submit" class="search-button">검색</button>
+                            <button class="action-button button-view"><a href="user_add.jsp">추가</a></button>
+                        </form>
+                    </div>
+
+                    <table class="board-table">
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>이름</th>
+                                <th>이메일</th>
+                                <th>가입일</th>
+                                <th>마지막 로그인</th>
+                                <th>상태</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td>hong@example.com</td>
+                                <td>2023-01-15</td>
+                                <td>2023-11-30</td>
+                                <td><span class="status-badge status-active">활성화</span></td>
+                                <td class="cell-actions">
+                                    <div class="action-buttons">
+                                        <button class="action-button button-edit">편집</button>
+                                        <button class="action-button button-delete">정지</button>
+                                        <button class="action-button button-view"><a href="user_view.jsp">보기</a></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

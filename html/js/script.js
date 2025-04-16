@@ -331,11 +331,53 @@ const initBoardPopup = () => {
     });
 };
 
+// 네비게이션 활성화 기능
+const initActiveNav = () => {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('header nav a');
+    let activeLinkFound = false; // 활성 링크를 찾았는지 여부 플래그
+
+    console.log("Current Path:", currentPath);
+
+    // 먼저 현재 경로와 일치하는 링크를 찾아 활성화
+    navLinks.forEach(link => {
+        const linkUrl = new URL(link.href);
+        const linkPath = linkUrl.pathname;
+
+        // 확장자를 제외하고 비교 (예: /main/about 과 /main/about.jsp 비교)
+        const currentPathBase = currentPath.substring(0, currentPath.lastIndexOf('.') > 0 ? currentPath.lastIndexOf('.') : currentPath.length);
+        const linkPathBase = linkPath.substring(0, linkPath.lastIndexOf('.') > 0 ? linkPath.lastIndexOf('.') : linkPath.length);
+
+        // 콘솔 로그 추가 (확장자 제거된 경로 확인)
+        console.log("Checking Link:", link.href, "Base Path:", linkPathBase, "Current Base:", currentPathBase);
+
+        // 확장자를 제외한 경로가 일치하거나, 루트 경로 처리
+        if (linkPathBase === currentPathBase || (currentPath === '/' && linkPath.endsWith('/index'))) { // index 는 확장자 없이 비교
+            console.log("Match found! Activating:", link.href);
+            link.classList.add('active');
+            activeLinkFound = true;
+        } else {
+            link.classList.remove('active'); // 일치하지 않으면 확실히 제거
+        }
+    });
+
+    // 만약 확장자 제외 비교로도 못 찾았고, 현재 경로가 / 라면 index.jsp 강제 활성화
+    if (!activeLinkFound && currentPath === '/') {
+         navLinks.forEach(link => {
+             if (new URL(link.href).pathname.endsWith('/index.jsp')) {
+                 console.log("Fallback: Activating index.jsp for root path");
+                 link.classList.add('active');
+             }
+         });
+    }
+};
+
 // 페이지 초기화 (공통)
 document.addEventListener('DOMContentLoaded', function() {
     // 공통 기능 초기화
     initMobileMenu();
     initMainSlider(); // 홈페이지 슬라이더
+    initActiveNav(); // 네비게이션 활성화 기능 호출
 
     // Ministry 페이지 탭 기능 초기화
     initMinistryTabs();

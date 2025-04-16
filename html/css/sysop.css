@@ -2459,3 +2459,48 @@ a {
     background: #f9efef;
     color: #cc3333;
 }
+
+/* Adjust margin/padding for board-list within content-area */
+.content-area > .board-list {
+    margin: 0; /* Remove default margin */
+    padding: 24px; /* Keep internal padding */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Apply subtle shadow */
+    background-color: #ffffff; /* Ensure white background */
+    border-radius: 8px; /* Ensure rounded corners */
+}
+
+/* Style search elements within board-header */
+.board-header .search-form {
+    /* Inline styles in HTML handle flex layout for now */
+}
+
+.board-header .search-input {
+    height: 36px;
+    background-color: #f9f9f9 !important;
+    border: 1px solid #e6e6e6 !important;
+    border-radius: 4px !important;
+    padding: 0 15px !important;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 14px;
+    color: #333;
+    flex-grow: 1; /* Ensure input takes available space */
+}
+
+.board-header .search-input::placeholder {
+    color: #999999;
+}
+
+.board-header .search-button {
+    width: auto;
+    height: 36px;
+    padding: 0 24px;
+    background-color: #337f4c;
+    color: #ffffff;
+    border-radius: 4px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
