@@ -1,15 +1,13 @@
             <!-- Content Area -->
             <div class="content-area">
                 <div class="content-box">
-                    <h2>사이트 설정 관리</h2>
-                    
-                    <div class="board-list-header">
-                        <div class="search-form" style="margin-left: auto;">
-                            <input type="text" placeholder="검색어 입력" class="search-input">
-                            <button type="button" class="button button-search">검색</button>
-                        </div>
+                    <div class="board-header">
+                        <h2 class="board-title">사이트 설정 관리</h2>
+                        <form class="search-form" style="flex-grow: 1; display: flex; gap: 10px; margin-left: 20px;">
+                            <input type="text" class="search-input" placeholder="검색어 입력..." />
+                            <button type="submit" class="search-button">검색</button>
+                        </form>
                     </div>
-
                     <table class="board-list-table">
                         <thead>
                             <tr>
@@ -25,7 +23,7 @@
                                 <td><a href="ministry_setting.jsp">사역 소개 페이지 관리</a></td>
                                 <td>2023-08-15</td>
                                 <td>
-                                    <a href="ministry_setting.jsp" class="text-button">수정</a>
+                                    <button class="action-button button-edit" onclick="location.href='ministry_setting.jsp'">수정</button>
                                 </td>
                             </tr>
                             <tr>
@@ -33,7 +31,7 @@
                                 <td><a href="main_setting.jsp">홈페이지 콘텐츠 관리</a></td>
                                 <td>2023-08-10</td>
                                 <td>
-                                    <a href="main_setting.jsp" class="text-button">수정</a>
+                                    <button class="action-button button-edit" onclick="location.href='main_setting.jsp'">수정</button>
                                 </td>
                             </tr>
                             <tr>
@@ -41,7 +39,7 @@
                                 <td><a href="about_setting.jsp">소개 페이지 콘텐츠 관리</a></td>
                                 <td>2023-08-05</td>
                                 <td>
-                                    <a href="about_setting.jsp" class="text-button">수정</a>
+                                    <button class="action-button button-edit" onclick="location.href='about_setting.jsp'">수정</button>
                                 </td>
                             </tr>
                             <tr>
@@ -49,7 +47,7 @@
                                 <td><a href="contact_setting.jsp">연락처 설정</a></td>
                                 <td>2023-07-28</td>
                                 <td>
-                                    <a href="contact_setting.jsp" class="text-button">수정</a>
+                                    <button class="action-button button-edit" onclick="location.href='contact_setting.jsp'">수정</button>
                                 </td>
                             </tr>
                             <tr>
@@ -57,7 +55,7 @@
                                 <td><a href="footer_setting.jsp">푸터 정보 설정</a></td>
                                 <td>2023-07-20</td>
                                 <td>
-                                    <a href="footer_setting.jsp" class="text-button">수정</a>
+                                    <button class="action-button button-edit" onclick="location.href='footer_setting.jsp'">수정</button>
                                 </td>
                             </tr>
                             <tr>
@@ -65,7 +63,7 @@
                                 <td><a href="seo_setting.jsp">SEO 및 메타 설정</a></td>
                                 <td>2023-07-15</td>
                                 <td>
-                                    <a href="seo_setting.jsp" class="text-button">수정</a>
+                                    <button class="action-button button-edit" onclick="location.href='seo_setting.jsp'">수정</button>
                                 </td>
                             </tr>
                         </tbody>
