@@ -119,8 +119,33 @@ p.setVar("webUrl", m.getWebUrl());
 
     
 
+ListManager lm = new ListManager();
+lm.setRequest(request);
+lm.setDebug(out);
+
+lm.setTable("TB_USER");
+lm.setListNum(10);
+lm.setFields("id, username, name, email, phone, role, created_at, updated_at, status");
+lm.addWhere("status = 1");
+
+DataSet users = lm.getDataSet();
+m.p(users);
+//if (!users.next()){
+//    m.jsError("error");
+//    return;
+//} else {
+    users.first();
+    while (users.next()){
+        users.put("created_at", m.time("yyyy" + "/" + "MM" + "/" + "dd " + "HH" + ":" + "mm", users.getString("created_at")));
+    }
+//}
+
+//m.p(dao);
+
 p.setLayout("sysop");
 p.setBody("sysop.user_list");
+p.setLoop("users", users);
+p.setVar("pagebar", lm.getPaging());
 p.display();
 
 
@@ -183,7 +208,7 @@ p.display();
     String resourcePath = loader.getResourcePathSpecificFirst();
     mergePath.addClassPath(resourcePath);
     com.caucho.vfs.Depend depend;
-    depend = new com.caucho.vfs.Depend(appDir.lookup("sysop/user_list.jsp"), -5544962350646255176L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("sysop/user_list.jsp"), 8123160865799305273L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
     depend = new com.caucho.vfs.Depend(appDir.lookup("sysop/init.jsp"), 7724095823239291073L, false);

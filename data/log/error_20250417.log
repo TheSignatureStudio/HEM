@@ -24,3 +24,552 @@
 [2025-04-17 12:36:57] at /main/board.jsp
 {DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /main/board.jsp
 {DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:13:57] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:13:57] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:13:57] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:13:57] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:13:57] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:13:57] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:14:00] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:14:00] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:14:00] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:14:00] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:14:00] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:14:00] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:14:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:14:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:14:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:14:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:14:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:14:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:16:02] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:16:02] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:16:02] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:16:02] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:16:02] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:16:02] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:17:06] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:17:06] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:17:06] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:17:06] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:17:06] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:17:06] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:18:58] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:18:58] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:18:58] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:18:58] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:18:58] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:18:58] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:39] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:40] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:41] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:42] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:42] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:42] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:42] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:20:42] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:20:42] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:22:05] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:22:05] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:22:05] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:22:05] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:22:05] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:22:05] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:22:32] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:22:32] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:22:32] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:22:32] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:22:32] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:22:32] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:25:06] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:25:06] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:25:10] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:25:10] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:25:14] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:25:14] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:25:20] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:25:24] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:25:28] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:25:37] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:25:41] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:25:45] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:28:19] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:28:23] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:28:27] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:29:19] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:19] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:19] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:19] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:19] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:19] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:22] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:23] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:29:24] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:32:50] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:32:50] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:32:50] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:32:50] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:32:50] at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)at /sysop/user_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2025-04-17 13:32:50] at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)at /sysop/user_0list.jsp
+{DB.getConnection} Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null (Cannot invoke "javax.sql.DataSource.getConnection()" because "ds" is null)
+[2025-04-17 13:33:51] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:33:55] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:33:59] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:34:35] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:34:39] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+[2025-04-17 13:34:43] at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)at /sysop/user_0list.jsp
+{DB.getConnection} Could not create connection to database server. Attempted reconnect 3 times. Giving up. (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
