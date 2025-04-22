@@ -19,12 +19,13 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!--@loop(list)-->
                     <tr>
-                        <td>community</td>
-                        <td>커뮤니티</td>
-                        <td>커뮤니티 게시판입니다.</td>
-                        <td><span class="status-badge status-active">활성화</span></td>
-                        <td>2024-03-01</td>
+                        <td>{{list.board_id}}</td>
+                        <td><a href="post_list.jsp?id={{list.id}}">{{list.board_name}}</a></td>
+                        <td>{{list.description}}</td>
+                        <td>{{list.status_conv}}</td>
+                        <td>{{list.created_at_conv}}</td>
                         <td>
                             <div class="action-buttons">
                                 <button class="action-button button-edit">수정</button>
@@ -32,32 +33,7 @@
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td>contact</td>
-                        <td>문의사항</td>
-                        <td>문의사항 게시판입니다.</td>
-                        <td><span class="status-badge status-active">활성화</span></td>
-                        <td>2024-03-01</td>
-                        <td>
-                            <div class="action-buttons">
-                                <button class="action-button button-edit">수정</button>
-                                <button class="action-button button-delete">삭제</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>visiontree</td>
-                        <td>비전트리</td>
-                        <td>비전트리 게시판입니다.</td>
-                        <td><span class="status-badge status-pending">대기중</span></td>
-                        <td>2024-03-02</td>
-                        <td>
-                            <div class="action-buttons">
-                                <button class="action-button button-edit">수정</button>
-                                <button class="action-button button-delete">삭제</button>
-                            </div>
-                        </td>
-                    </tr>
+                    <!--/loop(list)-->
                 </tbody>
             </table>
         </div>

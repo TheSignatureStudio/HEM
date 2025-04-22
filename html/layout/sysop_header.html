@@ -43,15 +43,15 @@
                     <span class="menu-text">게시판 관리</span>
                 </a>
                 <div class="submenu">
-                    <a href="post_list.jsp" class="submenu-item">
+                    <a href="post_list.jsp?id=1" class="submenu-item">
                         <i class="fas fa-bullhorn"></i>
                         <span class="submenu-text">커뮤니티 관리</span>
                     </a>
-                    <a href="boards/qt.jsp" class="submenu-item">
+                    <a href="post_list.jsp?id=2" class="submenu-item">
                         <i class="fas fa-question-circle"></i>
                         <span class="submenu-text">문의사항 관리</span>
                     </a>
-                    <a href="boards/qt.jsp" class="submenu-item">
+                    <a href="post_list.jsp?id=3" class="submenu-item">
                         <i class="fas fa-book"></i>
                         <span class="submenu-text">비전트리 관리</span>
                     </a>
@@ -83,7 +83,11 @@
                         <i class="fas fa-external-link-alt"></i>
                         <span>사용자 페이지</span>
                     </a>
-                    <span class="user-name">관리자</span>
+                    <a href="./login/logout.jsp" class="user-logout-link">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>로그아웃</span>
+                    </a>
+                    <span class="user-name">{{user.name}}</span>
                     <div class="user-avatar"></div>
                 </div>
             </div>

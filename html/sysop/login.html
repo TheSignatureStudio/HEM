@@ -1,22 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../html/css/sysop.css" />
-  </head>
-  <body>
-    <div class="HEM-admin-login">
-      <div class="div-wrapper">
-        <div class="div">
-          <div class="text">HEM 관리자</div>
-          <div class="text-wrapper">아이디</div>
-          <div class="div-2"></div>
-          <div class="text-2">비밀번호</div>
-          <div class="div-3"></div>
-          <div class="overlap-group"><div class="text-3">로그인</div></div>
-          <div class="text-4">회원가입</div>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 로그인</title>
+    <link rel="stylesheet" href="../../html/css/sysop.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1 class="login-title">HEM 관리자</h1>
+            
+            <form name="form1" method="post" onsubmit="return doLogin(this)">
+                <div class="login-form-group">
+                    <label for="username">아이디</label>
+                    <input type="text" id="username" name="username" placeholder="아이디를 입력하세요" required>
+                </div>
+                
+                <div class="login-form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" required>
+                </div>
+                
+                <button type="submit" class="login_submit">로그인</button>
+            </form>
+
+            <div class="login-footer">
+                <a href="/">회원가입</a>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+
+    <script>
+        function doLogin(f) {
+            $.post("/sysop/login/login.jsp", $(f).serialize(), function(ret) {
+                if(ret == 'success') {
+                    location.href = '/sysop/index.jsp';
+                } else {
+                    alert(ret);
+                }
+            });
+            return false;
+        }
+    </script>
+</body>
 </html>

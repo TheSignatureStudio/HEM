@@ -289,6 +289,33 @@ img {
     white-space: nowrap;
 }
 
+.user-logout-link {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: #f4f7f9;
+    border-radius: 20px;
+    color: #337f4c;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 14px;
+    gap: 8px;
+}
+
+.user-logout-link:hover {
+    background-color: #e5f9ef;
+    transform: translateY(-1px);
+}
+
+.user-logout-link i {
+    font-size: 14px;
+}
+
+.user-logout-link span {
+    white-space: nowrap;
+}
+
 /* content area */
 .content-area {
     padding: 24px;
@@ -312,8 +339,8 @@ img {
 
 .form-group {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    align-items: center; /* Vertically align label and input */
+    gap: 15px; /* Space between label and input */
 }
 
 .form-label {
@@ -321,15 +348,19 @@ img {
     font-weight: 500;
     color: #4c4c4c;
     font-size: 14px;
+    width: 120px; /* Fixed width for the label */
+    flex-shrink: 0; /* Prevent label from shrinking */
+    text-align: left; /* Ensure label text is aligned */
 }
 
 .form-input {
-    width: 100%;
+    flex: 1; /* Allow input to take remaining space */
     padding: 10px;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
     font-size: 14px;
     color: #333;
+    /* width: 100%; is implicitly handled by flex: 1 */
 }
 
 .form-textarea {
@@ -2085,8 +2116,8 @@ a {
 
 .HEM-admin-post-write .form-group {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    align-items: center; /* Vertically align label and input */
+    gap: 15px; /* Space between label and input */
 }
 
 .HEM-admin-post-write .form-label {
@@ -2094,15 +2125,19 @@ a {
     font-weight: 500;
     color: #4c4c4c;
     font-size: 14px;
+    width: 120px; /* Fixed width for the label */
+    flex-shrink: 0; /* Prevent label from shrinking */
+    text-align: left; /* Ensure label text is aligned */
 }
 
 .HEM-admin-post-write .form-input {
-    width: 100%;
+    flex: 1; /* Allow input to take remaining space */
     padding: 10px;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
     font-size: 14px;
     color: #333;
+    /* width: 100%; is implicitly handled by flex: 1 */
 }
 
 .HEM-admin-post-write .form-textarea {
@@ -2301,10 +2336,11 @@ a {
 
 .status-badge {
     display: inline-block;
-    padding: 4px 8px;
+    padding: 6px 12px; /* 패딩 값 수정 */
     border-radius: 4px;
     font-size: 12px;
     font-weight: 500;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 추가 */
 }
 
 .status-active {
@@ -2318,8 +2354,10 @@ a {
 }
 
 .status-inactive {
-    background: #f9efef;
-    color: #cc3333;
+    /* background: #f9efef; */ /* Previous light red */
+    background: #f5f5f5; /* Match new .button-disable background */
+    /* color: #cc3333; */    /* Previous red */
+    color: #999999;    /* Match new .button-disable text color */
 }
 
 .action-buttons {
@@ -2493,10 +2531,11 @@ a {
 /* Status Badges */
 .status-badge {
     display: inline-block;
-    padding: 4px 8px;
+    padding: 6px 12px; /* 패딩 값 수정 */
     border-radius: 4px;
     font-size: 12px;
     font-weight: 500;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 추가 */
 }
 
 .status-active {
@@ -2510,8 +2549,10 @@ a {
 }
 
 .status-inactive {
-    background: #f9efef;
-    color: #cc3333;
+    /* background: #f9efef; */ /* Previous light red */
+    background: #f5f5f5; /* Match new .button-disable background */
+    /* color: #cc3333; */    /* Previous red */
+    color: #999999;    /* Match new .button-disable text color */
 }
 
 /* Adjust margin/padding for board-list within content-area */
@@ -3066,4 +3107,122 @@ body.sidebar-is-collapsed .sidebar .submenu-item i {
     padding: 10px 20px;
     min-width: 120px;
     text-align: center;
+}
+
+/* Add styles for board-footer */
+.board-footer {
+    margin-top: 24px; /* 상단 마진 추가 */
+}
+
+/* Login Page Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f7f9;
+}
+
+.login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    color: #337f4c;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.login-form-group {
+    margin-bottom: 20px;
+}
+
+.login-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+.login-form-group input {
+    width: 100%;
+    height: 46px;
+    padding: 0 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.login-form-group input::placeholder {
+    color: #999;
+}
+
+.login_submit {
+    width: 100%;
+    height: 46px;
+    background-color: #337f4c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login_submit:hover {
+    background-color: #2a6b3f;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-footer a {
+    color: #337f4c;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.check-msg {
+    margin-left: 10px; /* 입력 필드와의 간격 */
+    font-size: 12px;
+    white-space: nowrap; /* 메시지가 길어져도 줄바꿈 방지 */
+}
+.check-msg .good {
+    color: green;
+}
+.check-msg .bad {
+    color: red;
+}
+
+/* Disable Button Style */
+.button-disable {
+    /* background: #f9efef; */ /* Previous light red */
+    background: #f5f5f5; /* Light gray background (like table headers) */
+    /* color: #cc3333; */      /* Previous red text */
+    color: #999999;      /* Medium gray text */
+    border: 1px solid #eeeeee; /* Lighter border */
+}
+
+.button-disable:hover {
+    /* background: #f5e7e7; */ /* Previous darker red */
+    background: #eeeeee; /* Slightly darker gray on hover */
+    color: #777777;      /* Darker gray text on hover */
+    border-color: #dddddd;
+}
+
+/* Ensure it uses base action button properties */
+.action-buttons .button-disable {
+    /* Inherits padding, border-radius, font-size from .action-button */
+    /* No additional specific styles needed for now */
 }

@@ -1,39 +1,38 @@
 <%@ page contentType="text/html; charset=utf-8" %><%@ include file="./init.jsp" %><%
 
-BoardDao board = new BoardDao();
-
+PostCategoryDao postCategory = new PostCategoryDao();
+PostDao post = new PostDao();
+UserDao user = new UserDao();
 //기본 변수
-String code = m.rs("code", "notice");  //게시판 코드
-int pageNum = m.ri("page", 1);
 int categoryId = m.ri("cid");
 String keyword = m.rs("keyword"); //검색어
 
 //목록
 ListManager lm = new ListManager();
+//lm.setDebug(out);
 lm.setRequest(request);
-lm.setTable(board.table + " a");
-lm.setFields("a.*");
-lm.addWhere("a.status != -1");
-if(categoryId > 0) lm.addWhere("a.category_id = " + categoryId);
-if(!"".equals(keyword)) { //검색 조건 추가
-    lm.addSearch("a.subject,a.content", keyword, "LIKE");
-}
-lm.setOrderBy("a.sort ASC, a.id DESC");
+lm.setTable(post.table + "  a JOIN " + user.table + " b JOIN " + postCategory.table + " c ON a.user_id = b.id AND a.category_id = c.id");
+lm.setFields("a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name");
+lm.addWhere("a.status = 1");
+lm.setOrderBy("a.id DESC");
 
 //포맷팅
 DataSet list = lm.getDataSet();
 while(list.next()) {
-    list.put("reg_date_conv", m.time("yyyy.MM.dd", list.s("reg_date")));
-    list.put("content_conv", m.stripTags(list.s("content")));
-    list.put("subject_conv", m.cutString(list.s("subject"), 50));
+    try {
+        Date date = inputFormat.parse(list.s("created_at"));
+        list.put("created_at_conv", outputFormat.format(date));
+    } catch(Exception e) {
+        // 변환 실패 시 기본 날짜 표시
+        list.put("created_at_conv", list.s("created_at").substring(0, 10).replace("-", "."));
+    }
 }
 
 //출력
 p.setLayout(ch);
 p.setBody("main.board");
+p.setLoop("list", list);
 p.setVar("list", list);
-p.setVar("total_cnt", lm.getTotalNum());
 p.setVar("pagebar", lm.getPaging());
-p.setVar("category_id", categoryId);
 p.display();
 %>

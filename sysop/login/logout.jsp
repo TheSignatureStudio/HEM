@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=utf-8" %><%@ include file="./init.jsp" %><%
 
-p.setBody("sysop.login");
-p.display();
+auth.delAuthInfo();
+
+m.redirect("./login.jsp");
 
 %>

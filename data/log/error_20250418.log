@@ -1,0 +1,381 @@
+[2025-04-18 00:00:06] at /main/post_0view.jsp
+{DB.query} SELECT TB_POST a JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1)at /main/post_0view.jsp
+{DB.query} SELECT TB_POST a JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1)
+[2025-04-18 00:00:07] at /main/post_0view.jsp
+{DB.query} SELECT TB_POST a JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1)at /main/post_0view.jsp
+{DB.query} SELECT TB_POST a JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1)
+[2025-04-18 00:00:09] at /main/post_0view.jsp
+{DB.query} SELECT TB_POST a JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1)at /main/post_0view.jsp
+{DB.query} SELECT TB_POST a JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1)
+[2025-04-18 00:00:39] at /main/post_0view.jsp
+{DB.query} SELECT TB_POST a JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1)at /main/post_0view.jsp
+{DB.query} SELECT TB_POST a JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 AND a.status != -1' at line 1)
+[2025-04-18 00:04:01] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:04:01] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:04:01] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:04:01] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:04:09] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:04:09] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:04:09] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:04:09] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:04:09] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:04:09] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:04:55] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:04:55] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:04:57] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:04:57] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:05:22] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:05:22] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:05:50] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:05:50] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy.MM.dd, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:12:25] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:12:25] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:12:26] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:12:26] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:12:39] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:12:39] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:12:40] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:12:40] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:14:08] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-18 00:14:08] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-18 00:14:10] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-18 00:14:10] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-18 00:14:27] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-18 00:14:27] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-18 00:14:27] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-18 00:14:27] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-18 00:16:55] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:16:55] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:16:56] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:16:56] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:16:57] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:16:57] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:16:57] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:16:57] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:16:57] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:16:57] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:16:57] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:16:57] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:01] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:01] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:01] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:01] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:02] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:02] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:16] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:16] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:16] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:16] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:16] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:16] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:17] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:17] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:19] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:19] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:27] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:27] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:27] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:27] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:27] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:27] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:27] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:27] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:28] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:28] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:39] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:39] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:17:57] at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/post_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-18 00:17:57] at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)at /main/post_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy-MM-dd hh:mm:ss, date:2025-04-17T14:21:01 (date is null)
+[2025-04-18 00:48:38] at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)
+[2025-04-18 00:48:38] at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)
+[2025-04-18 00:48:42] at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)
+[2025-04-18 00:48:42] at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)
+[2025-04-18 00:48:50] at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)
+[2025-04-18 00:48:50] at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status !' at line 1)
+[2025-04-18 00:49:30] at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)
+[2025-04-18 00:49:30] at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)
+[2025-04-18 00:49:33] at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)
+[2025-04-18 00:49:33] at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)
+[2025-04-18 00:49:35] at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)
+[2025-04-18 00:49:35] at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)
+[2025-04-18 00:49:35] at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)
+[2025-04-18 00:49:36] at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)
+[2025-04-18 00:49:36] at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)at /main/board.jsp
+{DB.query} SELECT count(*) AS count FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)
+[2025-04-18 00:49:36] at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)at /main/board.jsp
+{DB.query} SELECT a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name FROM TB_POST  a JOIN TB_USER b JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.status != -1 ORDER BY a.id desc LIMIT 0, 10 => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOINTB_POST_CATEGORY c ON a.user_id = b.id AND a.category_id = c.id WHERE a.stat' at line 1)
+[2025-04-18 01:23:09] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-18 01:23:09] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-18 01:23:09] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-18 01:23:09] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-18 01:24:45] at /sysop/user_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-18 01:24:45] at /sysop/user_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-18 01:25:20] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-18 01:25:20] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-18 01:25:20] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-18 01:25:20] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-18 01:53:42] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-18 01:53:42] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-18 01:53:42] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-18 01:53:42] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-18 01:53:44] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-18 01:53:44] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-18 01:53:44] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-18 01:53:44] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-18 01:58:43] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-18 01:58:43] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-18 01:58:43] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-18 01:58:43] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-18 01:58:45] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-18 01:58:45] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-18 01:58:45] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-18 01:58:45] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-18 22:18:34] at /sysop/index.jsp
+{Malgn.redirect} url:/sysop/dashboard.jsp (Can't sendRedirect() after data has committed to the client.)at /sysop/index.jsp
+{Malgn.redirect} url:/sysop/dashboard.jsp (Can't sendRedirect() after data has committed to the client.)
+[2025-04-18 22:18:44] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-18 22:18:44] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-18 22:18:44] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-18 22:18:44] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)

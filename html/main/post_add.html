@@ -1,0 +1,153 @@
+<!-- 게시판 비주얼 -->
+<section class="page-visual">
+    <div class="container">
+        <h2 class="page-title">글 작성하기</h2>
+        <p class="page-subtitle">커뮤니티에 새로운 글을 작성합니다</p>
+    </div>
+</section>
+
+<!-- 글 작성 폼 -->
+<section class="post-form-section">
+    <div class="container">
+        <form class="post-form" name="form1" method="post">
+            <div class="form-group">
+                <label for="title">제목</label>
+                <input type="text" id="title" name="title" placeholder="제목을 입력하세요" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="content">내용</label>
+                <textarea id="content" name="content" rows="15" placeholder="내용을 입력하세요" required></textarea>
+            </div>
+            
+            <div class="form-buttons">
+                <a href="board.jsp?code={{code}}" class="cancel-button">취소</a>
+                <button type="submit" class="submit-button">등록</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- 사용자 단 JS -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form.post-form');
+    
+    form.addEventListener('submit', function(e) {
+        const title = document.getElementById('title').value.trim();
+        const content = document.getElementById('content').value.trim();
+        
+        if (!title) {
+            e.preventDefault();
+            alert('제목을 입력해주세요.');
+            document.getElementById('title').focus();
+            return false;
+        }
+        
+        if (!content) {
+            e.preventDefault();
+            alert('내용을 입력해주세요.');
+            document.getElementById('content').focus();
+            return false;
+        }
+        
+        return true;
+    });
+});
+</script>
+
+<style>
+/* 글 작성 폼 스타일 */
+.post-form-section {
+    padding: 60px 0;
+}
+
+.post-form {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-form .form-group {
+    margin-bottom: 20px;
+}
+
+.post-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.post-form input[type="text"],
+.post-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.post-form textarea {
+    resize: vertical;
+    min-height: 200px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.submit-button,
+.cancel-button {
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-button {
+    background: #3a5a40;
+    color: white;
+    border: none;
+}
+
+.submit-button:hover {
+    background: #588157;
+}
+
+.cancel-button {
+    background: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancel-button:hover {
+    background: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .post-form {
+        padding: 20px;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+    }
+    
+    .submit-button,
+    .cancel-button {
+        width: 100%;
+    }
+}
+</style> 

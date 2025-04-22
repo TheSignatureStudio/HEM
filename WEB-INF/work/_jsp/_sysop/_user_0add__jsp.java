@@ -8,9 +8,11 @@ import javax.servlet.jsp.*;
 import javax.servlet.http.*;
 import java.util.*;
 import java.io.*;
+import dao.*;
 import malgnsoft.db.*;
 import malgnsoft.util.*;
-import dao.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class _user_0add__jsp extends com.caucho.jsp.JavaPage
 {
@@ -58,22 +60,13 @@ public class _user_0add__jsp extends com.caucho.jsp.JavaPage
 
     
 
-String docRoot = Config.getDocRoot();
-String jndi = Config.getJndi();
-String tplRoot = Config.getDocRoot() + "/html";
-String dataDir = Config.getDataDir();
-String webUrl = Config.getWebUrl();
-int port = request.getServerPort();
-if(port != 80) webUrl += ":" + port;
-
 Malgn m = new Malgn(request, response, out);
 
-Form f = new Form("form1");
-try { f.setRequest(request); } catch (Exception ex) { out.print("\uc81c\ud55c \uc6a9\ub7c9 \ucd08\uacfc - " + ex.getMessage()); return; }
+Form f = new Form();
+f.setRequest(request);
 
-Page p = new Page(tplRoot);
-p.setRequest(request);
-p.setPageContext(pageContext);
+Page p = new Page();
+p.setRequest(request, response);
 p.setWriter(out);
 
 int userId = 0;
@@ -84,43 +77,88 @@ String userBirthday = "";
 boolean isAdult = false;
 int sellerStatus = 0;
 
-Auth auth = new Auth(request, response);
-auth.loginURL = "../member/login.jsp";
+Auth auth = new Auth(request, response); 
 auth.keyName = "AUTHID1867";
 
+// ISO 8601 \ud615\uc2dd \ub0a0\uc9dc \ubcc0\ud658
+SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy.MM.dd");
+
 if(auth.isValid()) {
-	userId = auth.getInt("ID");
-	userName = auth.getString("NAME");
-	userType = auth.getString("TYPE");
-	userLogin = auth.getString("LOGINID");
-	userBirthday = auth.getString("BIRTHDAY");
-	sellerStatus = auth.getInt("SELLERSTATUS");
-	if(!"".equals(userBirthday)) {
-		isAdult = 0 <= m.diffDate("D", userBirthday, m.addDate("Y", -19, m.time("yyyyMMdd"), "yyyyMMdd"));
-		if("05".equals(userType)) isAdult = true;
-	}
+    userId = auth.getInt("id");
+	userName = auth.getString("name");
+	userLogin = auth.getString("uid");
+	userBirthday = auth.getString("birthday");
 	p.setVar("login_block", true);
 } else {
 	p.setVar("login_block", false);
-
 }
 
-p.setVar("SYS_HTTPHOST", request.getServerName());
-p.setVar("SYS_USERNAME", userName);
-p.setVar("SYS_PAGE_URL", m.urlencode(request.getRequestURI() + (!"".equals(m.qs()) ? "?" + m.qs() : "")));
-p.setVar("SYS_TITLE", Config.get("windowTitle"));
-p.setVar("SYS_SELLER", ("03".equals(userType) || "04".equals(userType)) && sellerStatus == 1);
-p.setVar("webUrl", m.getWebUrl());
-//p.setDebug(out);
+    
 
+UserDao userDao = new UserDao();
+auth.loginURL = "/sysop/login/login.jsp";
+
+if(userId == 0) auth.loginForm();
+
+DataSet user = userDao.find("id = " + userId + " AND role = 1");
+
+p.setVar("user", user);
 
     
 
+UserDao user2 = new UserDao();
 
-    
+if("CHECK".equals(m.rs("mode"))) {
+	String value = m.rs("v");
+	if("".equals(value)) { return; }
+
+	//\uc911\ubcf5\uc5ec\ubd80
+	if(0 < user2.findCount("username = '" + value + "'")) {
+		out.print("<span class='bad'>\uc0ac\uc6a9 \uc911\uc778 \ub85c\uadf8\uc778\uc544\uc774\ub514\uc785\ub2c8\ub2e4. \ub2e4\uc2dc \uc785\ub825\ud574 \uc8fc\uc138\uc694.</span>");
+	} else {
+		out.print("<span class='good'>\uc0ac\uc6a9\ud560 \uc218 \uc788\ub294 \ub85c\uadf8\uc778\uc544\uc774\ub514\uc785\ub2c8\ub2e4.</span>");
+	}
+	return;
+}
+
+f.addElement("name", null, "required:'Y'");
+f.addElement("username", null, "required:'Y'");
+f.addElement("password", null, "required:'Y'");
+f.addElement("role", null, "required:'Y'");
+f.addElement("status", null, "required:'Y'");
+f.addElement("email", null, "");
+f.addElement("phone", null, "");
+
+if(m.isPost() && f.validate()) {
+    //\uc81c\ud55c
+	if(0 < user2.findCount("username = '" + f.get("username") + "'")) { m.jsAlert("\uc0ac\uc6a9 \uc911\uc778 \ub85c\uadf8\uc778\uc544\uc774\ub514\uc785\ub2c8\ub2e4. \ub2e4\uc2dc \uc785\ub825\ud558\uc138\uc694."); return; }
+	if(0 < user2.findCount("email = '" + f.get("email") + "'")) {
+		m.jsAlert("\ud574\ub2f9 \uc774\uba54\uc77c( " + f.get("email") + " )\uc744 \uc0ac\uc6a9\uc911\uc785\ub2c8\ub2e4. \ub2e4\uc2dc \uc785\ub825\ud558\uc138\uc694.");
+		m.jsReplace("check_bc.jsp?" + m.qs(), "parent");
+		return;
+	}
+
+    userDao.item("name", f.get("name"));
+    userDao.item("username", f.get("username"));
+	userDao.item("password", m.encrypt(f.get("password"), "SHA-256"));
+    userDao.item("role", f.get("role"));
+    userDao.item("email", f.get("email"));
+    userDao.item("phone", f.get("phone"));
+    userDao.item("status", f.get("status"));
+    userDao.item("created_at", m.time("yyyyMMddHHmmss"));
+
+    if (!userDao.insert()){
+        m.jsError("error");
+        return;
+    }
+    m.redirect("/sysop/user_list.jsp");
+    return;
+}
 
 p.setLayout("sysop");
 p.setBody("sysop.user_add");
+p.setVar("form_script", f.getScript());
 p.display();
 
 
@@ -183,13 +221,13 @@ p.display();
     String resourcePath = loader.getResourcePathSpecificFirst();
     mergePath.addClassPath(resourcePath);
     com.caucho.vfs.Depend depend;
-    depend = new com.caucho.vfs.Depend(appDir.lookup("sysop/user_add.jsp"), -6041688738596134461L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("sysop/user_add.jsp"), -3077335166654115884L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
-    depend = new com.caucho.vfs.Depend(appDir.lookup("sysop/init.jsp"), 7724095823239291073L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("sysop/init.jsp"), 7271381338628451703L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
-    depend = new com.caucho.vfs.Depend(appDir.lookup("init.jsp"), 430197280427177313L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("init.jsp"), 8583015042390199441L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
   }

@@ -37,86 +37,25 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!--@loop(list)-->
                     <tr>
-                        <td>공지</td>
-                        <td>공지사항</td>
+                        <td>{{list.__ord}}</td>
+                        <td>{{list.category_name}}</td>
                         <td>
-                            <span class="notice">공지</span>
-                            <a href="#" class="title-link" data-post-id="notice1">2024년 교회학교 교사 모집 안내</a>
+                            <a href="/main/post_view.jsp?id={{list.id}}" class="title-link">{{list.title}}</a>
                         </td>
-                        <td>관리자</td>
-                        <td>2024.03.25</td>
-                        <td>128</td>
+                        <td>{{list.name}}</td>
+                        <td>{{list.created_at_conv}}</td>
+                        <td>{{list.view_count}}</td>
                     </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>소식</td>
-                        <td><a href="#" class="title-link" data-post-id="post5">3월 교사 교육 프로그램 후기</a></td>
-                        <td>김교사</td>
-                        <td>2024.03.24</td>
-                        <td>45</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>이야기</td>
-                        <td><a href="#" class="title-link" data-post-id="post4">우리 교회 비전트리 프로그램 이야기</a></td>
-                        <td>이목사</td>
-                        <td>2024.03.23</td>
-                        <td>67</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>소식</td>
-                        <td><a href="#" class="title-link" data-post-id="post3">2024 상반기 교육 세미나 개최 안내</a></td>
-                        <td>관리자</td>
-                        <td>2024.03.22</td>
-                        <td>89</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>이야기</td>
-                        <td><a href="#" class="title-link" data-post-id="post2">작은교회 교회학교 이야기</a></td>
-                        <td>박전도사</td>
-                        <td>2024.03.21</td>
-                        <td>92</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>소식</td>
-                        <td><a href="#" class="title-link" data-post-id="post1">HEM 교육 네트워크 1분기 모임 후기</a></td>
-                        <td>김간사</td>
-                        <td>2024.03.20</td>
-                        <td>103</td>
-                    </tr>
+                    <!--/loop(list)-->
                 </tbody>
             </table>
 
-            <a href="#" class="write-button">글쓰기</a>
+            <!-- <a href="/main/post_add.jsp?code={{code}}" class="write-button">글쓰기</a> -->
 
             <div class="pagination">
-                <a href="#" class="page-link">&lt;</a>
-                <a href="#" class="page-link active">1</a>
-                <a href="#" class="page-link">2</a>
-                <a href="#" class="page-link">3</a>
-                <a href="#" class="page-link">4</a>
-                <a href="#" class="page-link">5</a>
-                <a href="#" class="page-link">&gt;</a>
+                {{pagebar}}
             </div>
         </div>
     </section>
-
-    <!-- 게시글 팝업 -->
-    <div class="modal-overlay" id="boardModalOverlay">
-        <div class="modal-content modal-md">
-            <button class="modal-close" aria-label="닫기"></button>
-            <div class="modal-header">
-                <h3 class="modal-title"></h3>
-                <div class="modal-meta">
-                    <span class="popup-author"></span>
-                    <span class="popup-date"></span>
-                    <span class="popup-views"></span>
-                </div>
-            </div>
-            <div class="modal-body"></div>
-        </div>
-    </div>

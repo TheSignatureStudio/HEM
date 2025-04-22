@@ -8,9 +8,11 @@ import javax.servlet.jsp.*;
 import javax.servlet.http.*;
 import java.util.*;
 import java.io.*;
+import dao.*;
 import malgnsoft.db.*;
 import malgnsoft.util.*;
-import dao.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class _post_0list__jsp extends com.caucho.jsp.JavaPage
 {
@@ -58,22 +60,13 @@ public class _post_0list__jsp extends com.caucho.jsp.JavaPage
 
     
 
-String docRoot = Config.getDocRoot();
-String jndi = Config.getJndi();
-String tplRoot = Config.getDocRoot() + "/html";
-String dataDir = Config.getDataDir();
-String webUrl = Config.getWebUrl();
-int port = request.getServerPort();
-if(port != 80) webUrl += ":" + port;
-
 Malgn m = new Malgn(request, response, out);
 
-Form f = new Form("form1");
-try { f.setRequest(request); } catch (Exception ex) { out.print("\uc81c\ud55c \uc6a9\ub7c9 \ucd08\uacfc - " + ex.getMessage()); return; }
+Form f = new Form();
+f.setRequest(request);
 
-Page p = new Page(tplRoot);
-p.setRequest(request);
-p.setPageContext(pageContext);
+Page p = new Page();
+p.setRequest(request, response);
 p.setWriter(out);
 
 int userId = 0;
@@ -84,43 +77,98 @@ String userBirthday = "";
 boolean isAdult = false;
 int sellerStatus = 0;
 
-Auth auth = new Auth(request, response);
-auth.loginURL = "../member/login.jsp";
+Auth auth = new Auth(request, response); 
 auth.keyName = "AUTHID1867";
 
+// ISO 8601 \ud615\uc2dd \ub0a0\uc9dc \ubcc0\ud658
+SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy.MM.dd");
+
 if(auth.isValid()) {
-	userId = auth.getInt("ID");
-	userName = auth.getString("NAME");
-	userType = auth.getString("TYPE");
-	userLogin = auth.getString("LOGINID");
-	userBirthday = auth.getString("BIRTHDAY");
-	sellerStatus = auth.getInt("SELLERSTATUS");
-	if(!"".equals(userBirthday)) {
-		isAdult = 0 <= m.diffDate("D", userBirthday, m.addDate("Y", -19, m.time("yyyyMMdd"), "yyyyMMdd"));
-		if("05".equals(userType)) isAdult = true;
-	}
+    userId = auth.getInt("id");
+	userName = auth.getString("name");
+	userLogin = auth.getString("uid");
+	userBirthday = auth.getString("birthday");
 	p.setVar("login_block", true);
 } else {
 	p.setVar("login_block", false);
-
 }
 
-p.setVar("SYS_HTTPHOST", request.getServerName());
-p.setVar("SYS_USERNAME", userName);
-p.setVar("SYS_PAGE_URL", m.urlencode(request.getRequestURI() + (!"".equals(m.qs()) ? "?" + m.qs() : "")));
-p.setVar("SYS_TITLE", Config.get("windowTitle"));
-p.setVar("SYS_SELLER", ("03".equals(userType) || "04".equals(userType)) && sellerStatus == 1);
-p.setVar("webUrl", m.getWebUrl());
-//p.setDebug(out);
+    
 
+UserDao userDao = new UserDao();
+auth.loginURL = "/sysop/login/login.jsp";
+
+if(userId == 0) auth.loginForm();
+
+DataSet user = userDao.find("id = " + userId + " AND role = 1");
+
+p.setVar("user", user);
 
     
 
+PostCategoryDao postCategory = new PostCategoryDao();
+BoardDao boardDao = new BoardDao();
+PostDao post = new PostDao();
+UserDao user2 = new UserDao();
 
-    
+//\uae30\ubcf8 \ubcc0\uc218
+int id = m.ri("id");
+DataSet board = boardDao.find("id = " + id);
+if(!board.next()) {
+    m.jsError("error");
+    return;
+} else {
+    board.first();
+    if(board.next()) {
+        try {
+            Date date = inputFormat.parse(board.s("created_at"));
+            board.put("created_at_conv", outputFormat.format(date));
+        } catch(Exception e) {
+            // \ubcc0\ud658 \uc2e4\ud328 \uc2dc \uae30\ubcf8 \ub0a0\uc9dc \ud45c\uc2dc
+            board.put("created_at_conv", board.s("created_at").substring(0, 10).replace("-", "."));
+        }
+        if (board.getInt("status") == 1) {
+            board.put("status_conv", "<span class=\"status-badge status-active\">\ud65c\uc131\ud654</span>");
+        } else {
+            board.put("status_conv", "<span class=\"status-badge status-inactive\">\ube44\ud65c\uc131\ud654</span>");
+        }
+    }
+}
+
+//\ubaa9\ub85d
+ListManager lm = new ListManager();
+//lm.setDebug(out);
+lm.setRequest(request);
+lm.setTable(post.table + "  a JOIN " + user2.table + " b JOIN " + postCategory.table + " c ON a.user_id = b.id AND a.category_id = c.id");
+lm.setFields("a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, a.status, c.name as category_name");
+lm.addWhere("a.status != -1 AND a.category_id = " + id);
+lm.setOrderBy("a.id DESC");
+
+//\ud3ec\ub9f7\ud305
+DataSet list = lm.getDataSet();
+while(list.next()) {
+    try {
+        Date date = inputFormat.parse(list.s("created_at"));
+        list.put("created_at_conv", outputFormat.format(date));
+    } catch(Exception e) {
+        // \ubcc0\ud658 \uc2e4\ud328 \uc2dc \uae30\ubcf8 \ub0a0\uc9dc \ud45c\uc2dc
+        list.put("created_at_conv", list.s("created_at").substring(0, 10).replace("-", "."));
+    }
+    if (list.getInt("status") == 1) {
+        list.put("status_conv", "<span class=\"status-badge status-active\">\ud65c\uc131\ud654</span>");
+    } else {
+        list.put("status_conv", "<span class=\"status-badge status-inactive\">\ube44\ud65c\uc131\ud654</span>");
+    }
+}
+
+board.put("count", lm.getTotalNum());
 
 p.setLayout("sysop");
 p.setBody("sysop.post_list");
+p.setLoop("list", list);
+p.setVar("board", board);
+p.setVar("pagebar", lm.getPaging());
 p.display();
 
 
@@ -183,13 +231,13 @@ p.display();
     String resourcePath = loader.getResourcePathSpecificFirst();
     mergePath.addClassPath(resourcePath);
     com.caucho.vfs.Depend depend;
-    depend = new com.caucho.vfs.Depend(appDir.lookup("sysop/post_list.jsp"), -5545583688238173000L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("sysop/post_list.jsp"), 7915385173095946246L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
-    depend = new com.caucho.vfs.Depend(appDir.lookup("sysop/init.jsp"), 7724095823239291073L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("sysop/init.jsp"), 7271381338628451703L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
-    depend = new com.caucho.vfs.Depend(appDir.lookup("init.jsp"), 430197280427177313L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("init.jsp"), 8583015042390199441L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
   }

@@ -16,32 +16,38 @@
                                 <th>이름</th>
                                 <th>이메일</th>
                                 <th>가입일</th>
-                                <th>마지막 로그인</th>
+                                <!-- <th>마지막 로그인</th> -->
                                 <th>상태</th>
+                                <th>권한</th>
                                 <th>관리</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <!--@loop(users)-->
                             <tr>
-                                <td>1</td>
-                                <td>홍길동</td>
-                                <td>hong@example.com</td>
-                                <td>2023-01-15</td>
-                                <td>2023-11-30</td>
-                                <td><span class="status-badge status-active">활성화</span></td>
+                                <td>{{users.__ord}}</td>
+                                <td>{{users.name}}</td>
+                                <td>{{users.email}}</td>
+                                <td>{{users.created_at_conv}}</td>
+                                <!-- <td>{{users.last_login}}</td> -->
+                                <td>{{users.status_conv}}</td>
+                                <td>{{users.role_conv}}</td>
                                 <td class="cell-actions">
                                     <div class="action-buttons">
-                                        <button class="action-button button-edit">편집</button>
-                                        <button class="action-button button-delete">정지</button>
-                                        <button class="action-button button-view"><a href="user_view.jsp">보기</a></button>
+                                        <button class="action-button button-view"><a href="user_view.jsp?id={{users.id}}">보기</a></button>
                                     </div>
                                 </td>
                             </tr>
+                            <!--/loop(users)-->
                         </tbody>
                     </table>
+                    <div class="board-footer">
+                        {{pagebar}}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+

@@ -1,0 +1,9 @@
+# IDE
+.idea/
+*.iml
+
+# Resin config
+WEB-INF/resin-web.xml
+
+# Compiled files
+*.class 

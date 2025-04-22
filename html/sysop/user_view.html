@@ -7,32 +7,42 @@
                 <div class="board-info">
                     <div class="info-row">
                         <span class="info-label">이름</span>
-                        <span class="info-value">홍길동</span>
+                        <span class="info-value">{{user.name}}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">아이디</span>
+                        <span class="info-value">{{user.username}}</span>
                     </div>
                     <div class="info-row">
                         <span class="info-label">이메일</span>
-                        <span class="info-value">hong@example.com</span>
+                        <span class="info-value">{{user.email}}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">전화번호</span>
+                        <span class="info-value">{{user.phone}}</span>
                     </div>
                     <div class="info-row">
                         <span class="info-label">가입일</span>
-                        <span class="info-value">2023-01-15</span>
+                        <span class="info-value">{{user.created_at_conv}}</span>
                     </div>
                     <div class="info-row">
+                        <span class="info-label">역할</span>
+                        <span class="info-value">{{user.role_conv}}</span>
+                    </div>
+                    <!-- <div class="info-row">
                         <span class="info-label">마지막 로그인</span>
                         <span class="info-value">2023-11-30</span>
-                    </div>
+                    </div> -->
                     <div class="info-row">
                         <span class="info-label">상태</span>
-                        <span class="info-value">
-                            <span class="status-badge status-active">활성화</span>
-                        </span>
+                        <span class="info-value">{{user.status_conv}}</span>
                     </div>
                 </div>
 
                 <div class="action-buttons" style="justify-content: flex-end; margin-top: 20px;">
-                    <button class="action-button button-edit">수정</button>
-                    <button class="action-button button-delete">정지</button>
-                    <button class="action-button" onclick="location.href='/sysop/user_list.jsp'">목록</button>
+                    <button class="action-button button-edit"><a href="user_edit.jsp?id={{user.id}}">수정</a></button>
+                    <button class="action-button button-delete" onclick="if(confirm('비활성화 처리하시겠습니까?')) { location.href='user_delete.jsp?id={{user.id}}'; }">중지</button>
+                    <button class="action-button"><a href="/sysop/user_list.jsp">목록</a></button>
                 </div>
             </div>
         </div>

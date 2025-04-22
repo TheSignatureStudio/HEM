@@ -1,0 +1,241 @@
+[2025-04-23 00:45:01] at /sysop/index.jsp
+{Malgn.redirect} url:/sysop/dashboard.jsp (Can't sendRedirect() after data has committed to the client.)at /sysop/index.jsp
+{Malgn.redirect} url:/sysop/dashboard.jsp (Can't sendRedirect() after data has committed to the client.)
+[2025-04-23 00:45:12] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 00:45:12] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 00:45:12] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-23 00:45:12] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-23 00:55:08] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 00:55:08] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 00:55:08] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-23 00:55:08] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-23 01:04:13] at /sysop/post_0view.jsp
+{DB.query} SELECT a.id post_id, a.purpose, a.pw, a.title, a.content, a.writer, a.usage_status, a.reg_date, b.id user_id, b.name user_name FROM TB_POST a LEFT JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 => Unknown column 'a.purpose' in 'field list' (Unknown column 'a.purpose' in 'field list')at /sysop/post_0view.jsp
+{DB.query} SELECT a.id post_id, a.purpose, a.pw, a.title, a.content, a.writer, a.usage_status, a.reg_date, b.id user_id, b.name user_name FROM TB_POST a LEFT JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 1 => Unknown column 'a.purpose' in 'field list' (Unknown column 'a.purpose' in 'field list')
+[2025-04-23 01:04:16] at /sysop/post_0view.jsp
+{DB.query} SELECT a.id post_id, a.purpose, a.pw, a.title, a.content, a.writer, a.usage_status, a.reg_date, b.id user_id, b.name user_name FROM TB_POST a LEFT JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 2 => Unknown column 'a.purpose' in 'field list' (Unknown column 'a.purpose' in 'field list')at /sysop/post_0view.jsp
+{DB.query} SELECT a.id post_id, a.purpose, a.pw, a.title, a.content, a.writer, a.usage_status, a.reg_date, b.id user_id, b.name user_name FROM TB_POST a LEFT JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 2 => Unknown column 'a.purpose' in 'field list' (Unknown column 'a.purpose' in 'field list')
+[2025-04-23 01:04:52] at /sysop/post_0view.jsp
+{DB.query} SELECT a.id post_id, a.purpose, a.pw, a.title, a.content, a.writer, a.usage_status, a.reg_date, b.id user_id, b.name user_name FROM TB_POST a LEFT JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 2 => Unknown column 'a.purpose' in 'field list' (Unknown column 'a.purpose' in 'field list')at /sysop/post_0view.jsp
+{DB.query} SELECT a.id post_id, a.purpose, a.pw, a.title, a.content, a.writer, a.usage_status, a.reg_date, b.id user_id, b.name user_name FROM TB_POST a LEFT JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 2 => Unknown column 'a.purpose' in 'field list' (Unknown column 'a.purpose' in 'field list')
+[2025-04-23 01:05:13] at /sysop/post_0view.jsp
+{DB.query} SELECT a.id post_id, a.purpose, a.pw, a.title, a.content, a.writer, a.usage_status, a.reg_date, b.id user_id, b.name user_name FROM TB_POST a LEFT JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 2 => Unknown column 'a.purpose' in 'field list' (Unknown column 'a.purpose' in 'field list')at /sysop/post_0view.jsp
+{DB.query} SELECT a.id post_id, a.purpose, a.pw, a.title, a.content, a.writer, a.usage_status, a.reg_date, b.id user_id, b.name user_name FROM TB_POST a LEFT JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 2 => Unknown column 'a.purpose' in 'field list' (Unknown column 'a.purpose' in 'field list')
+[2025-04-23 01:06:03] at /sysop/post_0view.jsp
+{DB.query} SELECT a.id post_id, a.title, a.content, a.writer, a.usage_status, a.reg_date, b.id user_id, b.name user_name FROM TB_POST a LEFT JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 2 => Unknown column 'a.writer' in 'field list' (Unknown column 'a.writer' in 'field list')at /sysop/post_0view.jsp
+{DB.query} SELECT a.id post_id, a.title, a.content, a.writer, a.usage_status, a.reg_date, b.id user_id, b.name user_name FROM TB_POST a LEFT JOIN TB_USER b ON a.user_id = b.id WHERE a.id = 2 => Unknown column 'a.writer' in 'field list' (Unknown column 'a.writer' in 'field list')
+[2025-04-23 01:15:36] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 01:15:36] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 01:15:36] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-23 01:15:36] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-23 01:15:37] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 01:15:37] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 01:15:37] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-23 01:15:37] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-23 01:26:08] at /sysop/post_0add.jsp
+{DB.execute} INSERT INTO TB_POST (status,user_id,view_count,content,board_id,title) VALUES (?,?,?,?,?,?) => Unknown column 'board_id' in 'field list'
+{status=1, user_id=1, view_count=0, content=1, board_id=1, title=1} (Unknown column 'board_id' in 'field list')at /sysop/post_0add.jsp
+{DB.execute} INSERT INTO TB_POST (status,user_id,view_count,content,board_id,title) VALUES (?,?,?,?,?,?) => Unknown column 'board_id' in 'field list'
+{status=1, user_id=1, view_count=0, content=1, board_id=1, title=1} (Unknown column 'board_id' in 'field list')
+[2025-04-23 01:26:31] at /sysop/post_0add.jsp
+{DB.execute} INSERT INTO TB_POST (status,user_id,view_count,content,board_id,title) VALUES (?,?,?,?,?,?) => Unknown column 'board_id' in 'field list'
+{status=1, user_id=1, view_count=0, content=1, board_id=1, title=1} (Unknown column 'board_id' in 'field list')at /sysop/post_0add.jsp
+{DB.execute} INSERT INTO TB_POST (status,user_id,view_count,content,board_id,title) VALUES (?,?,?,?,?,?) => Unknown column 'board_id' in 'field list'
+{status=1, user_id=1, view_count=0, content=1, board_id=1, title=1} (Unknown column 'board_id' in 'field list')
+[2025-04-23 01:28:11] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 01:28:11] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 01:28:11] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-23 01:28:11] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-23 01:36:56] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 01:36:56] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 01:36:56] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-23 01:36:56] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-23 01:36:58] at /sysop/user_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 01:36:58] at /sysop/user_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 01:37:39] at /sysop/user_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 01:37:39] at /sysop/user_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 01:37:39] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 01:37:39] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 01:37:39] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-23 01:37:39] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-23 01:46:02] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 01:46:02] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 01:46:02] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-23 01:46:02] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-23 01:46:03] at /sysop/user_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0view.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 01:46:03] at /sysop/user_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0view.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 01:46:06] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 01:46:06] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 01:46:06] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-23 01:46:06] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-23 01:46:34] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-18T00:14:27 (Unparseable date: "2025-04-18T00:14:27")
+[2025-04-23 01:46:34] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-18T00:14:27 (date is null)
+[2025-04-23 01:46:34] at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")at /sysop/user_0list.jsp
+{Malgn.strToDate(1)} source:2025-04-17T04:06:34 (Unparseable date: "2025-04-17T04:06:34")
+[2025-04-23 01:46:34] at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)at /sysop/user_0list.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T04:06:34 (date is null)
+[2025-04-23 01:52:45] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:53:38] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:54:54] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:54:58] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:55:33] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:55:35] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:56:35] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:56:37] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:57:15] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:57:19] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:57:21] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:57:25] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:57:29] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:57:40] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:58:59] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:59:03] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:59:32] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:59:41] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 01:59:55] at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)at /main/index.jsp
+{ListManager.getRecordSet} Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null (Cannot invoke "javax.servlet.http.HttpServletRequest.getParameter(String)" because "this.request" is null)
+[2025-04-23 02:00:33] at /main/index.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/index.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-23 02:00:33] at /main/index.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T14:21:01 (date is null)at /main/index.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T14:21:01 (date is null)
+[2025-04-23 02:00:36] at /main/index.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/index.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-23 02:00:36] at /main/index.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T14:21:01 (date is null)at /main/index.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T14:21:01 (date is null)
+[2025-04-23 02:00:46] at /main/index.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")at /main/index.jsp
+{Malgn.strToDate(1)} source:2025-04-17T14:21:01 (Unparseable date: "2025-04-17T14:21:01")
+[2025-04-23 02:00:46] at /main/index.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T14:21:01 (date is null)at /main/index.jsp
+{Malgn.getTimeString(2)} sformat:yyyy/MM/dd HH:mm, date:2025-04-17T14:21:01 (date is null)

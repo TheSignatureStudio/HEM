@@ -1,0 +1,17 @@
+SMAP
+_post_0view__jsp.java
+JSP
+*S JSP
+*F
++ 1 init.jsp
+main/./../init.jsp
++ 2 init.jsp
+main/./init.jsp
++ 3 post_view.jsp
+main/post_view.jsp
+*L
+1#1,36:61
+1#2,5:97
+1#3,48:102
+48#3:150,2
+*E
