@@ -9,6 +9,3 @@ WEB-INF/work/
 
 # 로그 파일
 data/log/
-
-# 생성된 HTML
-html/main/
