@@ -1,9 +1,14 @@
-# IDE
-.idea/
-*.iml
 
-# Resin config
-WEB-INF/resin-web.xml
 
-# Compiled files
-*.class WEB-INF/work/
+# 컴파일된 클래스 파일
+*.class
+*.java.smap
+
+# JSP 컴파일 출력 파일
+WEB-INF/work/
+
+# 로그 파일
+data/log/
+
+# 생성된 HTML
+html/main/
