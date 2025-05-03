@@ -3,8 +3,9 @@
 BoardDao board = new BoardDao();
 
 ListManager lm = new ListManager();
-//lm.setDebug(out);
 lm.setRequest(request);
+//lm.setDebug(out);
+
 lm.setTable(board.table);
 lm.setFields("id, board_id, board_name, description, created_at, status");
 lm.addWhere("status != -1");
@@ -25,7 +26,6 @@ while(list.next()) {
         list.put("status_conv", "<span class=\"status-badge status-inactive\">비활성화</span>");
     }
 }
-
 p.setLayout("sysop");
 p.setBody("sysop.boards");
 p.setLoop("list", list);

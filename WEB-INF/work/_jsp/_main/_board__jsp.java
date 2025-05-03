@@ -110,8 +110,9 @@ String keyword = m.rs("keyword"); //\uac80\uc0c9\uc5b4
 
 //\ubaa9\ub85d
 ListManager lm = new ListManager();
-//lm.setDebug(out);
 lm.setRequest(request);
+//lm.setDebug(out);
+
 lm.setTable(post.table + "  a JOIN " + user.table + " b JOIN " + postCategory.table + " c ON a.user_id = b.id AND a.category_id = c.id");
 lm.setFields("a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, c.name as category_name");
 lm.addWhere("a.status = 1");
@@ -196,7 +197,7 @@ p.display();
     String resourcePath = loader.getResourcePathSpecificFirst();
     mergePath.addClassPath(resourcePath);
     com.caucho.vfs.Depend depend;
-    depend = new com.caucho.vfs.Depend(appDir.lookup("main/board.jsp"), 7809798893729091349L, false);
+    depend = new com.caucho.vfs.Depend(appDir.lookup("main/board.jsp"), -1610767366690753420L, false);
     _caucho_depends.add(depend);
     loader.addDependency(depend);
     depend = new com.caucho.vfs.Depend(appDir.lookup("main/init.jsp"), -5623034899004674451L, false);

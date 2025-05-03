@@ -1,0 +1,80 @@
+    <div class="calendar">
+        <form name="form1" method="get">
+			<input type="hidden" name="year" value="{{year}}" />
+            <input type="hidden" name="month" value="{{month}}" />
+            <div class="calendar_title_center">
+                <button type="button" class="calendar-nav prev" onclick="setDate('{{prev_year}}', '{{prev_month}}')" aria-label="이전 달">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <strong>{{year}}년 {{month}}월</strong>
+                <button type="button" class="calendar-nav next" onclick="setDate('{{next_year}}', '{{next_month}}')" aria-label="다음 달">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </form>
+    {{form_script}}
+    <div class="tb_box tb_cv calendar_table_wrap">
+        <button type="button" class="calendar-today-float" onclick="setDate('{{today_year}}', '{{today_month}}')">오늘</button>
+        <table class="type_calendar">
+            <colgroup>
+                <col style="width:14.2857%" />
+                <col style="width:14.2857%" />
+                <col style="width:14.2857%" />
+                <col style="width:14.2857%" />
+                <col style="width:14.2857%" />
+                <col style="width:14.2857%" />
+                <col style="width:14.2857%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">일</th>
+                    <th scope="col">월</th>
+                    <th scope="col">화</th>
+                    <th scope="col">수</th>
+                    <th scope="col">목</th>
+                    <th scope="col">금</th>
+                    <th scope="col">토</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <!--@loop(list)-->
+                    <td class="{{list.td_class}}">
+                        <div class="type_day"><span class="day_num">{{list.day}}</span>
+                            <div class="type_schedule">
+                                <!-- 종일 이벤트 (둥근 배경) -->
+                                <ul class="all-day-events">
+                                    <!--@loop(all_day_events)-->
+                                    <li class="all-day-event {{all_day_events.position_type}}" style="background-color: {{all_day_events.color}};">
+                                        <span class="all-day-label">{{all_day_events.title}}</span>
+                                    </li>
+                                    <!--/loop(all_day_events)-->
+                                </ul>
+                                
+                                <!-- 시간 기반 이벤트 (세로 막대) -->
+                                <ul class="time-events">
+                                    <!--@loop(request_start)-->
+                                    <li class="time-event">
+                                        <span class="label title">{{request_start.title}}</span><span class="label time">{{request_start.start_time}}</span>
+                                    </li>
+                                    <!--/loop(request_start)--> 
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                {{list.newline}}
+                <!--/loop(list)-->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+<script>
+    function setDate(year, month) {
+        var f = document.forms['form1'];
+        f['year'].value = year;
+        f['month'].value = month;
+        f.submit()
+    }
+</script>

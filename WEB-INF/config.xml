@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
 	<env>
-		<docRoot>/home/HEM/</docRoot>
-		<tplRoot>/home/HEM/html</tplRoot>
-		<dataDir>/home/HEM/data</dataDir>
-		<dataUrl>/data</dataUrl>
-		<logDir>/var/log/HEM</logDir>
-		<webUrl>http://hemweb.lumaum.shop</webUrl>
-		<fileDir>/home/HEM/data/file</fileDir>
 		<jndi>jdbc/hem</jndi>
-		<was>resin</was>
-		<encoding>utf-8</encoding>
 	</env>
 </config>

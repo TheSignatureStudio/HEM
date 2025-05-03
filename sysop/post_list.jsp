@@ -31,8 +31,9 @@ if(!board.next()) {
 
 //목록
 ListManager lm = new ListManager();
-//lm.setDebug(out);
 lm.setRequest(request);
+//lm.setDebug(out);
+
 lm.setTable(post.table + "  a JOIN " + user2.table + " b JOIN " + postCategory.table + " c ON a.user_id = b.id AND a.category_id = c.id");
 lm.setFields("a.id, a.category_id, a.title, b.name, a.created_at, a.view_count, a.status, c.name as category_name");
 lm.addWhere("a.status != -1 AND a.category_id = " + id);

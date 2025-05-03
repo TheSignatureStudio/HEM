@@ -9,7 +9,7 @@
   <database>
     <jndi-name>jdbc/hem</jndi-name>
     <driver type="com.mysql.cj.jdbc.Driver">
-       <url>jdbc:mysql://43.202.123.52:3306/hem?autoReconnect=true&amp;serverTimezone=UTC</url>
+       <url>jdbc:mysql://43.202.123.52:3306/hem?autoReconnect=true&amp;serverTimezone=Asia/Seoul</url>
        <user>lumaum</user>
        <password>Asdf5591^^</password>
     </driver>
